@@ -1,0 +1,1 @@
+let sidebarLinks = document.querySelectorAll('sidebar-link')

@@ -77,7 +77,7 @@
                                     <path d="M3 6h18"></path>
                                     <path d="M16 10a4 4 0 0 1-8 0"></path>
                                 </svg>
-                                <span class="align-middle">E-commerce</span>
+                                <span class="align-middle">Page Section</span>
 
                             </a>
 
@@ -85,45 +85,45 @@
 
                                 <li class="sidebar-item" >
                                     <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Products</span>
-                                        <span class="badge badge-sidebar-primary">New</span>
+                                        <span class="align-middle">Add Desktop Banner</span>
+                                        <!-- <span class="badge badge-sidebar-primary">New</span> -->
                                     </a>
 
                                 </li>
 
                                 <li class="sidebar-item" >
                                     <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Product Details</span>
-                                        <span class="badge badge-sidebar-primary">New</span>
-                                    </a>
-
-                                </li>
-
-                                <li class="sidebar-item" m>
-                                    <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Orders</span>
-                                        <span class="badge badge-sidebar-primary">New</span>
+                                        <span class="align-middle">Add Mobile Banner</span>
+                                        <!-- <span class="badge badge-sidebar-primary">New</span> -->
                                     </a>
 
                                 </li>
 
                                 <li class="sidebar-item" >
                                     <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Customers</span>
+                                        <span class="align-middle">Add Testimonial</span>
+                                        <!-- <span class="badge badge-sidebar-primary">New</span> -->
+                                    </a>
+
+                                </li>
+
+                                <li class="sidebar-item" >
+                                    <a href="index.html" class="sidebar-link">
+                                        <span class="align-middle">Add Location</span>
                                     </a>
 
                                 </li>
 
                                 <li class="sidebar-item">
                                     <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Invoice</span>
+                                        <span class="align-middle">Add Offer Banner</span>
                                     </a>
 
                                 </li>
 
                                 <li class="sidebar-item" >
                                     <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Pricing</span>
+                                        <span class="align-middle">Add Video</span>
                                     </a>
 
                                 </li>
@@ -145,7 +145,7 @@
                                     <path d="M9 21V9"></path>
                                 </svg>
 
-                                <span class="align-middle">Projects</span>
+                                <span class="align-middle">Order Section</span>
 
                             </a>
 
@@ -153,14 +153,14 @@
 
                                 <li class="sidebar-item" >
                                     <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Overview</span>
+                                        <span class="align-middle">View Orders</span>
                                     </a>
 
                                 </li>
 
                                 <li class="sidebar-item" >
                                     <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Details</span>
+                                        <span class="align-middle">View Completed Orders</span>
                                     </a>
 
                                 </li>
@@ -181,7 +181,7 @@
                                     <rect width="3" height="9" x="7" y="7"></rect>
                                     <rect width="3" height="5" x="14" y="7"></rect>
                                 </svg>
-                                <span class="align-middle">Tasks</span>
+                                <span class="align-middle">Product Section</span>
 
                             </a>
 
@@ -189,14 +189,56 @@
 
                                 <li class="sidebar-item" >
                                     <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Lists</span>
+                                        <span class="align-middle">Add Promo Code</span>
                                     </a>
 
                                 </li>
 
                                 <li class="sidebar-item" >
                                     <a href="index.html" class="sidebar-link">
-                                        <span class="align-middle">Kanban</span>
+                                        <span class="align-middle">Add Category</span>
+                                    </a>
+
+                                </li>
+
+                                 <li class="sidebar-item" >
+                                    <a href="index.html" class="sidebar-link">
+                                        <span class="align-middle">Add Subcategory</span>
+                                    </a>
+
+                                </li>
+
+                                 <li class="sidebar-item" >
+                                    <a href="index.html" class="sidebar-link">
+                                        <span class="align-middle">Add Product</span>
+                                    </a>
+
+                                </li>
+
+                                 <li class="sidebar-item" >
+                                    <a href="index.html" class="sidebar-link">
+                                        <span class="align-middle">Add Product Extra Image</span>
+                                    </a>
+
+                                </li>
+
+                                 <li class="sidebar-item" >
+                                    <a href="index.html" class="sidebar-link">
+                                        <span class="align-middle">Add Unit</span>
+                                    </a>
+
+                                </li>
+
+                                 <li class="sidebar-item" >
+                                    <a href="index.html" class="sidebar-link">
+                                        <span class="align-middle">Add Price</span>
+                                    </a>
+
+                                </li>
+
+                                 <li class="sidebar-item" >
+                                    <a href="index.html" class="sidebar-link">
+                                        <span class="align-middle">Add Offer</span>
                                     </a>
 
                                 </li>
