@@ -38,7 +38,6 @@
                     </a>
 
                     <ul class="sidebar-nav position-relative p-0 w-100">
-                        <li class="sidebar-header">navigation header</li>
                         <li class="sidebar-item">
                             <a href="#dashboardMenu1" class="sidebar-link" data-bs-toggle="collapse"
                                 aria-expanded="false">
@@ -61,40 +60,11 @@
                                 <span size="18" class="badge badge-sidebar-primary">5</span>
 
                             </a>
-
-                            <ul class="sidebar-dropdown list-unstyled collapse show" id="dashboardMenu1">
-
-                                <li class="sidebar-item">
-                                    <a href="index.html" class="sidebar-link blue-text">Default</a>
-
-                                </li>
-
-                                <li class="sidebar-item" >
-                                    <a href="index.html" class="sidebar-link">Analytics</a>
-
-                                </li>
-
-                                <li class="sidebar-item" >
-                                    <a href="index.html" class="sidebar-link">sasS</a>
-
-                                </li>
-
-                                <li class="sidebar-item" >
-                                    <a href="index.html" class="sidebar-link">Social</a>
-
-                                </li>
-
-                                <li class="sidebar-item" >
-                                    <a href="index.html" class="sidebar-link">Crypto</a>
-
-                                </li>
-                            </ul>
-
                         </li>
 
 
 
-                        <li class="sidebar-header">apps</li>
+                      
 
                         <li class="sidebar-item">
                             <a href="#dashboardMenu2" class="sidebar-link" data-bs-toggle="collapse"
@@ -199,76 +169,6 @@
 
                         </li>
 
-                        <li class="sidebar-item">
-                            <a href="#dashboardMenu4" class="sidebar-link" data-bs-toggle="collapse"
-                                aria-expanded="false">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-list lucide align-middle">
-                                    <line x1="8" x2="21" y1="6" y2="6"></line>
-                                    <line x1="8" x2="21" y1="12" y2="12"></line>
-                                    <line x1="8" x2="21" y1="18" y2="18"></line>
-                                    <line x1="3" x2="3.01" y1="6" y2="6"></line>
-                                    <line x1="3" x2="3.01" y1="12" y2="12"></line>
-                                    <line x1="3" x2="3.01" y1="18" y2="18"></line>
-                                </svg>
-
-                                <span class="align-middle">Chart</span>
-
-                            </a>
-
-                        </li>
-
-                        <li class="sidebar-item">
-                            <a href="#dashboardMenu5" class="sidebar-link" data-bs-toggle="collapse"
-                                aria-expanded="false">
-
-                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-files lucide align-middle">
-                                    <path d="M20 7h-3a2 2 0 0 1-2-2V2"></path>
-                                    <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"></path>
-                                    <path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"></path>
-                                </svg>
-
-                                <span class="align-middle">File Manager</span>
-                                <span size="18" class="badge badge-sidebar-primary">New</span>
-                            </a>
-                        </li>
-
-                         <li class="sidebar-item">
-                            <a href="#dashboardMenu6" class="sidebar-link" data-bs-toggle="collapse"
-                                aria-expanded="false">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-calendar lucide align-middle">
-                                    <path d="M8 2v4"></path>
-                                    <path d="M16 2v4"></path>
-                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                                    <path d="M3 10h18"></path>
-                                </svg>
-
-                                <span class="align-middle">Calender</span>
-                            </a>
-                        </li>
-
-                         <li class="sidebar-item">
-                            <a href="#dashboardMenu7" class="sidebar-link" data-bs-toggle="collapse"
-                                aria-expanded="false">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-mail lucide align-middle">
-                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                </svg>
-
-                                <span class="align-middle">Email</span>
-                                <span size="18" class="badge badge-sidebar-primary">New</span>
-                            </a>
-                        </li>
 
                          <li class="sidebar-item">
                             <a href="#dashboardMenu8" class="sidebar-link" data-bs-toggle="collapse"
@@ -313,7 +213,7 @@
 
             <div class="sidebar-item logout-item">
 
-                <a href="#" class="sidebar-link" aria-expanded="false">
+                <a href="#" class="sidebar-link position-absolute bottom-0 start-0" aria-expanded="false">
                     <i class="fa-solid fa-right-from-bracket" width="24" height="24"></i>
                     <span class="align-middle">Logout</span>
                 </a>
