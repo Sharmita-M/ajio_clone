@@ -268,6 +268,66 @@
         </nav>
     </div>
 
+     <nav class="navbar navbar-expand bg-custom-blue px-3">
+    <button class="btn text-white fs-4 me-3" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <input type="text" class="form-control w-25 bg-custom-blue border-0 text-white" placeholder="Search..." style="opacity:0.7" />
+    <div class="ms-auto d-flex align-items-center gap-4 position-relative">
+      <div class="position-relative" style="cursor:pointer;">
+        <i class="fas fa-bell text-white fs-4"></i>
+        <span class="badge-notify">0</span>
+      </div>
+      <button class="btn text-white fs-4 p-0" aria-label="Target"><i class="fas fa-crosshairs"></i></button>
+      <img src="https://storage.googleapis.com/a1aa/image/59b870b4-8ad9-4dd1-0948-ac89c4f0e4e5.jpg" alt="Round logo with text 'Yumcut' in brown and yellow colors" class="rounded-circle" width="40" height="40" />
+    </div>
+  </nav>
+
+  <!-- Sub Navbar -->
+  <div class="d-flex justify-content-between align-items-center bg-white border-bottom px-3 py-2">
+    <div class="text-dark fs-6 fw-normal">Dashboard</div>
+    <div class="text-secondary fs-6 fw-normal">Dashboard</div>
+  </div>
+
+  <!-- Cards -->
+  <main class="container my-3">
+    <div class="row g-3">
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card shadow-sm">
+          <div class="card-header bg-custom-blue text-white text-center fw-semibold">Total Order</div>
+          <div class="card-body bg-yellow text-center py-4">
+            <p class="fs-3 fw-bold text-black-900 mb-3">14</p>
+            <p class="text-white mb-0">View Order</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card shadow-sm">
+          <div class="card-header bg-custom-blue text-white text-center fw-semibold">Today Order</div>
+          <div class="card-body bg-teal text-center py-4">
+            <p class="fs-3 fw-bold text-black-900 mb-3">0</p>
+            <p class="text-white mb-0">View Order</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card shadow-sm">
+          <div class="card-header bg-custom-blue text-white text-center fw-semibold">Cancle Order</div>
+          <div class="card-body bg-red text-center py-4">
+            <p class="fs-3 fw-bold text-black-900 mb-3">0</p>
+            <p class="text-white mb-0">View Order</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card shadow-sm">
+          <div class="card-header bg-custom-blue text-white text-center fw-semibold">Earnings</div>
+          <div class="card-body text-center py-4">
+            <p class="fs-3 fw-bold text-black-900 mb-0">Rs 15,957.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>

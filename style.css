@@ -526,3 +526,24 @@ a.sidebar-link:active{
   transform: rotate(-135deg);
   top: 1.3rem;
 }
+ .bg-custom-blue { background-color: #0ea5e9; }
+    .bg-yellow { background-color: #f7ca57; }
+    .bg-teal { background-color: #00a99d; }
+    .bg-red { background-color: #f93838; }
+    .text-yellow-white { color: white; }
+    .text-black-900 { color: #1f2937; font-weight: 800; }
+    .badge-notify {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 0.7rem;
+      background: #dc3545;
+      color: white;
+      border-radius: 50%;
+      width: 1.25rem;
+      height: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translate(50%, -50%);
+    }
