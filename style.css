@@ -518,6 +518,8 @@ a.sidebar-link:active{
   top: 1.5rem;
   right: 1.7rem;
   transition: all .2s ease-in-out;
+  width: 0;
+  overflow: hidden;
 }
 .blue-text:hover{
   color: rgb(61, 76, 239) !important;
@@ -526,24 +528,145 @@ a.sidebar-link:active{
   transform: rotate(-135deg);
   top: 1.3rem;
 }
- .bg-custom-blue { background-color: #0ea5e9; }
-    .bg-yellow { background-color: #f7ca57; }
-    .bg-teal { background-color: #00a99d; }
-    .bg-red { background-color: #f93838; }
-    .text-yellow-white { color: white; }
-    .text-black-900 { color: #1f2937; font-weight: 800; }
-    .badge-notify {
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-size: 0.7rem;
-      background: #dc3545;
+.topbar {
+      background-color: #0ea5e9;
+      height: 4.5rem;
+      display: flex;
+      padding: 0 1.5rem;
       color: white;
-      border-radius: 50%;
+    }
+    .topbar .menu-btn {
+      font-size: 1.25rem;
+      margin-right: 1rem;
+      border: none;
+      background: none;
+      color: white;
+    }
+    .topbar .search-input {
+      width: 16rem;
+      height: 40px;
+      border-radius: 0.25rem;
+      border: none;
+      padding: 0 0.75rem;
+      color: #111827;
+    }
+    .topbar .search-input::placeholder {
+      color: #6b7280;
+    }
+    .topbar .icons {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 1.25rem;
+      position: relative;
+    }
+    .topbar .icons .fa-bell {
+      position: relative;
+      cursor: pointer;
+    }
+    .topbar .icons .fa-bell .badge {
+      position: absolute;
+      top: -0.4rem;
+      right: -0.6rem;
+      background-color: #dc2626;
+      color: white;
+      font-size: 0.625rem;
+      font-weight: 600;
       width: 1.25rem;
       height: 1.25rem;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      transform: translate(50%, -50%);
+      user-select: none;
     }
+    .topbar .icons .fa-crosshairs {
+      cursor: pointer;
+    }
+    .topbar .icons img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid white;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .breadcrumb-bar {
+      background-color: white;
+      border-bottom: 1px solid #e5e7eb;
+      color: #4b5563;
+      font-size: 0.875rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1.5rem;
+      user-select: none;
+      box-shadow: 0px 7px 13px -14px rgba(0, 0, 0, 0.5); 
+    }
+    .dashboard-cards {
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    .dashboard-cards > div {
+      flex: 1 0 0;
+      min-width: 200px;
+      box-shadow: 1px 2px 12px -3px rgba(0, 0, 0, 0.5); 
+    }
+    .card-header {
+      background-color: #0ea5e9;
+      color: white;
+      text-align: center;
+      font-weight: 600;
+      padding: 0.4rem 0;
+      font-size: 0.9rem;
+    }
+    .card-body {
+      text-align: center;
+      padding: 2rem 0;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #111827;
+      position: relative;
+    }
+    .card-body .subtext {
+      color: white;
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      user-select: none;
+    }
+    .bg-yellow-custom {
+      background-color: #facc15;
+    }
+    .bg-teal-custom {
+      background-color: #14b8a6;
+    }
+    .bg-red-custom {
+      background-color: #ef4444;
+    }
+    .bg-white-custom {
+      background-color: white;
+      font-weight: 800;
+    }
+
+
+/* Collapsed state */
+.sidebar.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+/* Content with sidebar */
+#content.with-sidebar {
+    margin-left: -250px;
+    transition: all 0.3s ease;
+}
+
+/* Content full-width when sidebar is collapsed */
+#content.full-width {
+    margin-left: 0;
+}
