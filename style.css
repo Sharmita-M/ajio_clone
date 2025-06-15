@@ -436,9 +436,9 @@ accordion in product page */
 	transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out;
 }
 
-body:not([data-sidebar-position = right]) .sidebar .collpsed{
+/* body:not([data-sidebar-position = right]) .sidebar .collpsed{
 	margin-left: -350px;
-}
+}  */
 .sidebar::-webkit-scrollbar{
 	width: 8px;
 } 
@@ -653,20 +653,31 @@ a.sidebar-link:active{
       font-weight: 800;
     }
 
+    /* main content */
 
-/* Collapsed state */
-.sidebar.collapsed {
-    width: 0;
-    overflow: hidden;
-}
+  .main{
+    display: flex !important;
+    width: 100% !important;
+    height: 100vh;
+    overflow-y: scroll;
+    min-width: 0;
+    transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out;
+  }
 
-/* Content with sidebar */
-#content.with-sidebar {
-    margin-left: -250px;
-    transition: all 0.3s ease;
-}
-
-/* Content full-width when sidebar is collapsed */
-#content.full-width {
-    margin-left: 0;
-}
+  .navbar-main{
+    border-bottom: 0 !important;  
+    box-shadow: 0 0 2rem #2930421a !important;
+    background-color: #fff !important;
+  }
+  .input-group-navbar{
+    min-width: 240px;
+  }
+  .input-group-navbar input{
+    
+  }
+  #toggle {
+    cursor: pointer !important;
+  }
+  .nav-item-user{
+    cursor: pointer !important;
+  }

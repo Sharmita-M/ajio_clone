@@ -39,7 +39,7 @@
 
                     <ul class="sidebar-nav position-relative p-0 w-100">
                         <li class="sidebar-item">
-                            <a href="#dashboardMenu1" class="sidebar-link" data-bs-toggle="collapse"
+                            <a href="#dashboardMenu1" class="sidebar-link" "
                                 aria-expanded="false">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -248,8 +248,38 @@
                         </li>
 
                     </ul>
-</nav>
-<div class="flex-grow-1 d-flex flex-column" style="min-height: 100vh;">
+        </nav>
+        <div class="main">
+            <nav class="navbar-main d-flex justify-content-between align-items-center p-4 navbar navbar-expend navbar-light">
+                <span class="sidebar-toggle d-flex align-items-center fs-4">
+                    <i class="fa-solid fa-bars cursor-pointer" id="toggle"></i>
+                </span>
+
+                <form inline="true" action="" class="ps-4 d-none d-sm-inline-block">
+                    <div class="input-group-navbar input-group">
+                        <input type="text" placeholder="Search" class="form-holder">
+                        <button type="button" class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-search lucide">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </nav>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+<!-- <div class="flex-grow-1 d-flex flex-column" style="min-height: 100vh;">
       <header class="topbar">
         <button class="menu-btn d-md-none" aria-label="Toggle menu"><i class="fas fa-bars"></i>
     <button class="btn text-white fs-4 me-3" aria-label="Menu" id="toggleSidebar"><i class="fas fa-bars"></i></button>
@@ -302,7 +332,7 @@
 
 
 </body>
-</html>
+</html> -->
 
 
     
