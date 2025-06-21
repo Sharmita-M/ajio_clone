@@ -435,10 +435,7 @@ accordion in product page */
 	background-color: rgb(52, 47, 65) !important;
 	transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out;
 }
-
-/* body:not([data-sidebar-position = right]) .sidebar .collpsed{
-	margin-left: -350px;
-}  */
+ 
 .sidebar::-webkit-scrollbar{
 	width: 8px;
 } 
@@ -662,22 +659,42 @@ a.sidebar-link:active{
     overflow-y: scroll;
     min-width: 0;
     transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out;
+    flex-direction: column !important;
   }
 
   .navbar-main{
     border-bottom: 0 !important;  
     box-shadow: 0 0 2rem #2930421a !important;
-    background-color: #fff !important;
+    background-color: #fbfbfb !important;
+    width: 100% !important;
   }
   .input-group-navbar{
     min-width: 240px;
   }
-  .input-group-navbar input{
-    
-  }
+
   #toggle {
     cursor: pointer !important;
   }
   .nav-item-user{
     cursor: pointer !important;
   }
+  .input-group-navbar input{
+	background-color: #f4f7f9;
+	box-shadow: none;
+	height: 45px;
+	border: 0;
+	padding: 0.45rem 0.75rem;
+	font-size: .9rem;
+	outline: none !important;
+}
+.input-group-navbar button{
+	background-color: #afafaf;
+	box-shadow: none;
+	height: 45px;
+	border: 0;
+	padding: 0.45rem 0.75rem;
+	font-size: .9rem;
+	outline: none !important;
+}
+
+
