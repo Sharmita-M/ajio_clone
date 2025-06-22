@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="asserts/css/style.css">
+   
+<script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 </head>
 
 <body>
@@ -43,7 +45,7 @@
 
           <ul class="sidebar-nav position-relative p-0 w-100">
             <li class="sidebar-item">
-              <a href="#dashboardMenu1" class="sidebar-link" "
+              <a href="#dashboardMenu1" class="sidebar-link" onclick="loadContent ('dashboard')"
                                 aria-expanded=" false">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -60,18 +62,15 @@
                   <line x1="18" x2="22" y1="16" y2="16"></line>
                 </svg>
 
-                <span class="align-middle">Dashboard</span>
+                <span class="align-middle"  >Dashboard</span>
                 <span size="18" class="badge badge-sidebar-primary">5</span>
 
               </a>
             </li>
 
 
-
-
-
             <li class="sidebar-item">
-              <a href="#dashboardMenu2" class="sidebar-link" data-bs-toggle="collapse" aria-expanded="false">
+              <a href="#dashboardMenu2" class="sidebar-link"  data-bs-toggle="collapse" aria-expanded="false">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -87,7 +86,7 @@
               <ul class="sidebar-dropdown list-unstyled collapse" id="dashboardMenu2">
 
                 <li class="sidebar-item">
-                  <a href="index.html" class="sidebar-link">
+                  <a href="#" class="sidebar-link" onclick="loadContent('addBanner')">
                     <span class="align-middle">Add Desktop Banner</span>
                     <!-- <span class="badge badge-sidebar-primary">New</span> -->
                   </a>
@@ -95,7 +94,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                  <a href="index.html" class="sidebar-link">
+                  <a href="" class="sidebar-link" onclick="loadContent('addMobileBanner')">
                     <span class="align-middle">Add Mobile Banner</span>
                     <!-- <span class="badge badge-sidebar-primary">New</span> -->
                   </a>
@@ -103,7 +102,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                  <a href="index.html" class="sidebar-link">
+                  <a href="#" class="sidebar-link" onclick="loadContent('addTestimonial')">
                     <span class="align-middle">Add Testimonial</span>
                     <!-- <span class="badge badge-sidebar-primary">New</span> -->
                   </a>
@@ -196,7 +195,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                  <a href="index.html" class="sidebar-link">
+                  <a href="#" class="sidebar-link" onclick="loadContent('addCategory')">
                     <span class="align-middle">Add Category</span>
                   </a>
 
@@ -255,17 +254,23 @@
 
     <div class="main">
       <nav class="navbar-main d-flex justify-content-between align-items-center p-4 navbar navbar-expend navbar-light">
-       <button onclick="toggleSidebar()"  class="sidebar-toggle d-flex align-items-center fs-4">
-      
+       <button onclick="toggleSidebar()"  class="sidebar-toggle d-flex align-items-center fs-4 custom-btn ">
       <span >
           <i class="fa-solid fa-bars cursor-pointer" id="toggle"></i>
         </span>
         </button> 
+        <div class="flex-grow-1"></div>
+    <div class="d-flex align-items-center gap-4">
+      <div class="icon-container position-relative" aria-label="Notifications">
+        <i class="far fa-bell text-dark"></i>
+        <span class="badge-notify">0</span>
+      </div>
+    </div>
 
         <form inline="true" action="" class="ps-4 d-none d-sm-inline-block">
           <div class="input-group-navbar input-group">
             <input type="text" placeholder="Search" class="form-holder">
-            <button type="button" class="btn">
+            <button type="button" class="btn ">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-search lucide">
@@ -275,21 +280,64 @@
             </button>
           </div>
         </form>
+        
 
+      </nav>
 
-              <!-- ........................ -->
-
-             
-
-
-            </div>
+        <!-- ........................ -->
+                
+<div  id="main-content" class="content">
+  <!-- Cards Section -->
+  <main class="container my-4">
+    <div class="row g-3">
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="shadow rounded">
+          <div class="card-header-custom">Total Order</div>
+          <div class="text-center py-5 bg-warning rounded-bottom text-dark fw-bold">
+            <p class="fs-3 mb-2">14</p>
+            <p class="text-white fw-normal">View Order</p>
           </div>
         </div>
-      </nav>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="shadow rounded">
+          <div class="card-header-custom">Today Order</div>
+          <div class="text-center py-5 bg-info rounded-bottom text-dark fw-bold" style="background-color:#00b39f !important;">
+            <p class="fs-3 mb-2">0</p>
+            <p class="text-white fw-normal">View Order</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="shadow rounded">
+          <div class="card-header-custom">Cancle Order</div>
+          <div class="text-center py-5 bg-danger rounded-bottom text-dark fw-bold">
+            <p class="fs-3 mb-2">0</p>
+            <p class="text-white fw-normal">View Order</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="shadow rounded ">
+          <div class="card-header-custom">Earnings</div>
+          <div class="text-center py-5 bg-white rounded-bottom text-dark fw-bold fs-4 ">
+            Rs 15,957.00
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  <!-- ....................................................... -->
+  
     </div>
 
 
   </div>
+
+  
 
 
 
@@ -299,6 +347,7 @@
 
   <script src="asserts/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+ 
 
 </body>
 
