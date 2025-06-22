@@ -36,10 +36,7 @@ img {
 .dropdown-menu {
   width: 80vw;
   max-width: 1000px;
-   left: 50% !important;
-  transform: translateX(-50%) !important;
-  position: absolute;
-  top: 100%;
+
 }
 
  .dropdown:hover > .dropdown-menu {
@@ -138,10 +135,7 @@ img {
 .bi-bag {
     color: #fff;
 }
-.list-unstyled a{
-  text-decoration: none !important;
-  color: #6c757d !important;
-}
+
 
 .navbar {
     height: 92px;
