@@ -27,7 +27,7 @@
                 <div class="d-flex align-items-center links ms-5" id="link_btn">
                     <a href="#" class="nav-link">Sign In / Join AJIO</a>
                     <a href="#" class="nav-link ms-3">Customer Care</a>
-                    <a href="#" class="btn-luxe ms-2">Visit AJIOLUXE</a>
+                    <a href="#" class="d-flex justify-content-center align-items-center btn-luxe ms-2">Visit AJIOLUXE</a>
                 </div>
             </div>
         </div>

@@ -1,28 +1,22 @@
-<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="asserts/images/index_page_images/favicon_title.ico" type="image/x-icon">
-    <title>Online Shopping Site for Women, Men, Kids Fashion, Lifestyle & More</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>products page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white position-sticky top-0 z-3 shadow">
+   <nav class="navbar navbar-expand-lg navbar-light bg-white position-sticky top-0 z-3 shadow">
         <div class="container">
             <img id="aji_nav_logo" src="asserts/images/index_page_images/ajio logo.png" alt="">
             <div class="pe-5 ">
@@ -549,683 +543,367 @@
             </div>
     </nav>
 
+  
+ 
+<div class="container">
 
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button><button type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="4" aria-label="Slide 5"></button><button type="button"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                        aria-label="Slide 7"></button><button type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="7" aria-label="Slide 8"></button><button type="button"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+  <div aria-label="breadcrumb" >
+    <ol class="breadcrumb breadcrumb_item text-secondary bg-transparent pt-4">
+      <li class="breadcrumb-item"><a href="#" class="text-secondary text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">D2C Fashion</li>
+    </ol>
+  </div>
+  <!-- accordion start -->
+
+  <div class="container py-3 float-start" style="max-width: 300px;">
+    <div class="accordion " id="parentAccordion">
+
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header" id="headingRefineBy">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRefineBy"
+            aria-expanded="true" aria-controls="collapseRefineBy">
+            <strong>Refine By</strong>
+          </button>
+        </h2>
+        <div id="collapseRefineBy" class="accordion-collapse collapse show" aria-labelledby="headingRefineBy"
+          data-bs-parent="#parentAccordion">
+          <div class="accordion-body p-0">
+            <div class="accordion" id="refineAccordion">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingGender">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseGender" aria-expanded="true" aria-controls="collapseGender">
+                    Gender
+                  </button>
+                </h2>
+                <div id="collapseGender" class="accordion-collapse collapse show" aria-labelledby="headingGender"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body pt-2 pb-1">
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="" id="womenCheck" />
+                      <label class="form-check-label gender-label checkbox-label" for="womenCheck">
+                        Women (1,229,834)
+                      </label>
+                    </div>
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="" id="girlsCheck" />
+                      <label class="form-check-label gender-label checkbox-label" for="girlsCheck">
+                        Girls (93,314)
+                      </label>
+                    </div>
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="" id="infantsCheck" />
+                      <label class="form-check-label gender-label checkbox-label" for="infantsCheck">
+                        Infants (18,267)
+                      </label>
+                    </div>
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="" id="menCheck" />
+                      <label class="form-check-label gender-label checkbox-label" for="menCheck">
+                        Men (3,902)
+                      </label>
+                    </div>
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="" id="boysCheck" />
+                      <label class="form-check-label gender-label checkbox-label" for="boysCheck">
+                        Boys (233)
+                      </label>
+                    </div>
+                    <div class="more-text">MORE</div>
+                  </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="asserts/images/index_page_images/main_banner_images/new_season_styles.jpg"
-                            class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="asserts/images/index_page_images/main_banner_images/trends.jpg.jpg"
-                            class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="asserts/images/index_page_images/main_banner_images/premium_brands.jpg"
-                            class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="asserts/images/index_page_images/main_banner_images/belts_and_wallets.jpg"
-                            class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="asserts/images/index_page_images/main_banner_images/bonanza.jpg" class="d-block w-100"
-                            alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="asserts/images/index_page_images/main_banner_images/british_fashion.jpg"
-                            class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="asserts/images/index_page_images/main_banner_images/makeup_banner.jpg"
-                            class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="asserts/images/index_page_images/main_banner_images/new_season_styles.jpg"
-                            class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="asserts/images/index_page_images/main_banner_images/bonanza.jpg" class="d-block w-100"
-                            alt="..." />
-                    </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingCategory">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
+                    Category
+                  </button>
+                </h2>
+                <div id="collapseCategory" class="accordion-collapse collapse" aria-labelledby="headingCategory"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body"></div>
                 </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingPrice">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsePrice" aria-expanded="false" aria-controls="collapsePrice">
+                    Price
+                  </button>
+                </h2>
+                <div id="collapsePrice" class="accordion-collapse collapse" aria-labelledby="headingPrice"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingBrands">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseBrands" aria-expanded="false" aria-controls="collapseBrands">
+                    Brands
+                  </button>
+                </h2>
+                <div id="collapseBrands" class="accordion-collapse collapse" aria-labelledby="headingBrands"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingOccasion">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOccasion" aria-expanded="false" aria-controls="collapseOccasion">
+                    Occasion
+                  </button>
+                </h2>
+                <div id="collapseOccasion" class="accordion-collapse collapse" aria-labelledby="headingOccasion"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingDiscount">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseDiscount" aria-expanded="false" aria-controls="collapseDiscount">
+                    Discount
+                  </button>
+                </h2>
+                <div id="collapseDiscount" class="accordion-collapse collapse" aria-labelledby="headingDiscount"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingColors">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseColors" aria-expanded="false" aria-controls="collapseColors">
+                    Colors
+                  </button>
+                </h2>
+                <div id="collapseColors" class="accordion-collapse collapse" aria-labelledby="headingColors"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingSizeFit">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSizeFit" aria-expanded="false" aria-controls="collapseSizeFit">
+                    Size &amp; Fit
+                  </button>
+                </h2>
+                <div id="collapseSizeFit" class="accordion-collapse collapse" aria-labelledby="headingSizeFit"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingTags">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTags" aria-expanded="false" aria-controls="collapseTags">
+                    Tags
+                  </button>
+                </h2>
+                <div id="collapseTags" class="accordion-collapse collapse" aria-labelledby="headingTags"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingRating">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseRating" aria-expanded="false" aria-controls="collapseRating">
+                    Rating
+                  </button>
+                </h2>
+                <div id="collapseRating" class="accordion-collapse collapse" aria-labelledby="headingRating"
+                  data-bs-parent="#refineAccordion">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+      </div>
 
-
-
-
-    <div>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button><button type="button"
-                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button><button type="button"
-                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                            aria-label="Slide 6"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="asserts/images/index_page_images/small_sub_banner_img/bob_card.avif"
-                                class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asserts/images/index_page_images/small_sub_banner_img/dbs.avif"
-                                class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asserts/images/index_page_images/small_sub_banner_img/icici_bank.avif"
-                                class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asserts/images/index_page_images/small_sub_banner_img/sbi_card.avif"
-                                class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asserts/images/index_page_images/small_sub_banner_img/shop&earn_points.avif"
-                                class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asserts/images/index_page_images/small_sub_banner_img/wallet_points.avif"
-                                class="d-block w-100" alt="..." />
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+      <div class="accordion-item mt-3 border-0">
+        <h2 class="accordion-header" id="headingMoreFilters">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseMoreFilters" aria-expanded="true" aria-controls="collapseMoreFilters">
+            More Filters
+          </button>
+        </h2>
+        <div id="collapseMoreFilters" class="accordion-collapse collapse" aria-labelledby="headingMoreFilters"
+          data-bs-parent="#parentAccordion">
+          <div class="accordion-body pt-2">
+            <p class="more-filters-text mb-2">
+              Please select upto 3 categories to view more filters
+            </p>
+            <button type="button" class="btn-select-category" aria-label="Select Category">
+              SELECT CATEGORY
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
         </div>
-
+      </div>
 
     </div>
-    <!-- 3rd carousel -->
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/love_at_first_click.avif" />
-    </div>
+  </div>
 
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/free_delivery.avif" />
-    </div>
-    <!-- 4th carousel -->
-
-    <div>
-        <img alt="trending_today_heading"
-            src="asserts/images/index_page_images/kids_banner_img/deals_that_steal_your_heart.webp" />
-    </div>
-
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                aria-label="Slide 7"></button>
+  <div class="container border-bottom pb-3">
+    <h1 class="text-center fw-normal py-4" style="font-size: 1.875rem;">
+      50 To 90 Percent Off
+    </h1>
+    <div class="d-flex border-top pt-3 align-items-center">
+      <strong class="text-dark">1,341,207 Items Found</strong>
+      <div class="d-flex flex-grow-1 justify-content-center gap-4">
+        <div class="d-flex align-items-center gap-2">
+          <span class="uppercase-gray">Grid</span>
+          <div class="d-flex gap-1">
+            <div class="grid-box grid-medium"></div>
+            <div class="grid-box grid-medium"></div>
+            <div class="grid-box grid-dark"></div>
+            <div class="grid-box grid-light"></div>
+            <div class="grid-box grid-light"></div>
+            <div class="grid-box grid-light"></div>
+          </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="asserts/images/index_page_images/kids_banner_img/beardo.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/kids_banner_img/kuchipoo.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/kids_banner_img/pilgrim.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/kids_banner_img/seba_med.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/kids_banner_img/spykar.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/kids_banner_img/the_face_shop.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/kids_banner_img/trampoline.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-        </div>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span class="uppercase-gray">Sort by</span>
+        <select class="form-select" aria-label="Sort by">
+          <option selected>Relevance</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Newest</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="row g-4">
+    <!-- Product 1 -->
+    <div class="col-12 col-sm-6 col-lg-4 position-relative product-card">
+      <div class="position-relative">
+        <img src="https://storage.googleapis.com/a1aa/image/934014fe-1146-446c-d155-4cca4a5fb592.jpg"
+          alt="U.S. Polo Assn. Women High-Rise Straight Fit Jeans front view on model wearing red top and white shoes" />
+        <div class="quick-view">QUICK VIEW</div>
+      </div>
+      <div class="product-brand mt-1">U.S. Polo Assn.</div>
+      <div class="product-name">Women High-Rise Straight Fit Jeans</div>
+      <div class="rating">4.3★ | 27</div>
+      <div class="price mt-1">
+        <span class="original">₹1,347</span>
+        <span class="fw-semibold ms-1">₹743</span>
+        <span class="discount">(45% off)</span>
+      </div>
+      <div class="offer-price mt-1">
+        <i class="fas fa-circle"></i> Offer Price: ₹1,091
+      </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="col-12 col-sm-6 col-lg-4 product-card">
+      <img src="https://storage.googleapis.com/a1aa/image/9594baed-4983-4c4e-3318-03e7a633ec9e.jpg"
+        alt="SPYKAR Men Low-Rise Skinny Fit Jeans front view on model wearing red top and white shoes" />
+      <div class="product-brand mt-1">SPYKAR</div>
+      <div class="product-name">Men Low-Rise Skinny Fit Jeans</div>
+      <div class="rating">3.4★ | 136</div>
+      <div class="price mt-1">
+        <span class="original">₹1,794</span>
+        <span class="fw-semibold ms-1">₹899</span>
+        <span class="discount">(54% off)</span>
+      </div>
+      <div class="offer-price mt-1">
+        <i class="fas fa-circle"></i> Offer Price: ₹1,435
+      </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="col-12 col-sm-6 col-lg-4 product-card">
+      <img src="https://storage.googleapis.com/a1aa/image/3a02d343-1f64-4784-c0e6-7435ef450c85.jpg"
+        alt="U.S. Polo Assn. Women High-Rise Wide-Leg Jeans front view on model wearing green top and white shoes" />
+      <div class="product-brand mt-1">U.S. Polo Assn.</div>
+      <div class="product-name">Women High-Rise Wide-Leg Jeans</div>
+      <div class="rating">3.7★ | 28</div>
+      <div class="price mt-1">
+        <span class="original">₹1,512</span>
+        <span class="fw-semibold ms-1">₹746</span>
+        <span class="discount">(45% off)</span>
+      </div>
+      <div class="offer-price mt-1">
+        <i class="fas fa-circle"></i> Offer Price: ₹1,225
+      </div>
+    </div>
+    <!-- Product 4 -->
+    <div class="col-12 col-sm-6 col-lg-4 position-relative product-card">
+      <div class="position-relative">
+        <img src="https://storage.googleapis.com/a1aa/image/7f6174c0-60cc-4eef-7079-b9168db30b77.jpg"
+          alt="U.S. Polo Assn. Women Heavy-Wash Wide-Leg Jeans front view on model wearing pink top and white shoes" />
+        <div class="bestseller-badge">BESTSELLER</div>
+      </div>
+      <div class="product-brand mt-1">U.S. Polo Assn.</div>
+      <div class="product-name">Women Heavy-Wash Wide-Leg Jeans</div>
+      <div class="rating">3.8★ | 188</div>
+      <div class="price mt-1">
+        <span class="original">₹1,402</span>
+        <span class="fw-semibold ms-1">₹229</span>
+        <span class="discount">(39% off)</span>
+      </div>
+      <div class="offer-price mt-1">
+        <i class="fas fa-circle"></i> Offer Price: ₹1,206
+      </div>
+    </div>
+    <!-- Product 5 -->
+    <div class="col-12 col-sm-6 col-lg-4 product-card">
+      <img src="https://storage.googleapis.com/a1aa/image/a7accd50-2e05-4124-7745-23f2e3053d33.jpg"
+        alt="U.S. Polo Assn. Women High-Rise Bootcut Jeans front view on model wearing white shoes" />
+      <div class="product-brand mt-1">U.S. Polo Assn.</div>
+      <div class="product-name">Women High-Rise Bootcut Jeans</div>
+      <div class="rating">3.6★ | 58</div>
+      <div class="price mt-1">
+        <span class="original">₹1,483</span>
+        <span class="fw-semibold ms-1">₹399</span>
+        <span class="discount">(47% off)</span>
+      </div>
+      <div class="offer-price mt-1">
+        <i class="fas fa-circle"></i> Offer Price: ₹1,275
+      </div>
+    </div>
+    <!-- Product 6 -->
+    <div class="col-12 col-sm-6 col-lg-4 position-relative product-card">
+      <div class="position-relative">
+        <img src="https://storage.googleapis.com/a1aa/image/e1768911-003f-4042-16f3-dbdcb1f2b1a0.jpg"
+          alt="U.S. Polo Assn. Boys Lightly Washed Slim Fit Jeans front view" />
+        <div class="ad-badge">AD</div>
+      </div>
+      <div class="product-brand mt-1">U.S. Polo Assn.</div>
+      <div class="product-name">Boys Lightly Washed Slim Fit Jeans</div>
+      <div class="rating">4★ | 13</div>
+      <div class="price mt-1">
+        <span class="original">₹1,300</span>
+        <span class="fw-semibold ms-1">₹599</span>
+        <span class="discount">(50% off)</span>
+      </div>
+      <div class="offer-price mt-1">
+        <i class="fas fa-circle"></i> Offer Price: ₹1,040
+      </div>
     </div>
 
+  </div>
+  </div>
+  </div>
 
-    <!-- 5th carousel -->
+</div>
 
-    <div>
-        <img alt="trending_today_heading"
-            src="asserts/images/index_page_images/style_more_than_crush/Style_more_than_crush.avif" />
-    </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                aria-label="Slide 6"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="asserts/images/index_page_images/style_more_than_crush/fasttrack.avif" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/style_more_than_crush/jackets.avif" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/style_more_than_crush/sweatshirt&hoodies.avif"
-                    class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/style_more_than_crush/trending_best_sellers.gif"
-                    class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/style_more_than_crush/trends_70%off.webp"
-                    class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/style_more_than_crush/wardrobe_classics.avif"
-                    class="d-block w-100" alt="..." />
-            </div>
-        </div>
-    </div>
 
-
-
-
-    <!-- 6th carousel -->
-
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/turn_heads_img/refer_friends.avif" />
-    </div>
-
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/turn_heads_img/brands_picks.avif" />
-    </div>
-
-
-    <div>
-        <img alt="trending_today_heading"
-            src="asserts/images/index_page_images/turn_heads_img/Turn_heads_banner.webp" />
-    </div>
-
-    <!-- 7th carousel -->
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="asserts/images/index_page_images/turn_heads_img/kids_fun_wear.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/turn_heads_img/monte_carlo.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images//turn_heads_img/park_avenue.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/turn_heads_img/shirts_trousers&more.jpg"
-                    class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/turn_heads_img/us_polo.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-        </div>
-    </div>
-
-
-
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/grid images/next_in_trends.webp" />
-    </div>
-
-
-
-    <div class="trending-grid">
-
-        <img src="asserts/images/index_page_images/grid images/azorte.avif" />
-        <img src="asserts/images/index_page_images/grid images/john_players.jpg" />
-        <img src="asserts/images/index_page_images/grid images/trends_collection.avif" />
-        <img src="asserts/images/index_page_images/grid images/under_499.avif" />
-        <img src="asserts/images/index_page_images/grid images/winterware.avif" />
-        <img src="asserts/images/index_page_images/grid images/yousta.jpg" />
-    </div>
-
-
-
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/sbi_banner2_img/SBI-Reliance.avif" />
-    </div>
-
-
-    <!-- 8th carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="asserts/images/index_page_images/sbi_banner2_img/paytm_upi.avif" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/sbi_banner2_img/phonepe.avif" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/sbi_banner2_img/mobiquick.avif" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/sbi_banner2_img/mobiquick2.avif" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/sbi_banner2_img/reliance_one.jpg" class="d-block w-100"
-                    alt="..." />
-            </div>
-        </div>
-    </div>
-
-
-
-    <div>
-        <img alt="trending_today_heading"
-            src="asserts/images/index_page_images/cupid_approved_winterwear/cupid_winterwear_banner.avif" />
-    </div>
-
-
-    <div class="trending-grid2">
-
-        <img src="asserts/images/index_page_images/cupid_approved_winterwear/winterwear.avif" />
-        <img src="asserts/images/index_page_images/cupid_approved_winterwear/blazer.avif" />
-        <img src="asserts/images/index_page_images/cupid_approved_winterwear/sweatshirt.avif" />
-        <img src="asserts/images/index_page_images/cupid_approved_winterwear/thermalwear.avif" />
-        <img src="asserts/images/index_page_images/cupid_approved_winterwear/jackets.avif" />
-    </div>
-
-
-
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/all_eyes_on_her/ajio_exclusive.avif" />
-    </div>
-
-
-    <div class="trending-grid2">
-
-        <img src="asserts/images/index_page_images/all_eyes_on_her/exclusive grid/asos.avif" />
-        <img src="asserts/images/index_page_images/all_eyes_on_her/exclusive grid/gap.avif" />
-        <img src="asserts/images/index_page_images/all_eyes_on_her/exclusive grid/buda_jeans.avif" />
-        <img src="asserts/images/index_page_images/all_eyes_on_her/exclusive grid/gas.avif" />
-    </div>
-
-
-
-    <div>
-        <img alt="trending_today_heading"
-            src="asserts/images/index_page_images/all_eyes_on_her/all_eyes_on_her_banner.avif" />
-    </div>
-
-
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="asserts/images/index_page_images/all_eyes_on_her/best_ethinic_brands.webp"
-                    class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/all_eyes_on_her/international_discount.webp"
-                    class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/all_eyes_on_her/premium_handbags.webp" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/all_eyes_on_her/summer_dresses.webp" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/all_eyes_on_her/unbeatable_discount.webp"
-                    class="d-block w-100" alt="..." />
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div>
-        <img alt="trending_today_heading"
-            src="asserts/images/index_page_images/heart_warming_style/heart_warming_style_banner.avif" />
-    </div>
-
-
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="asserts/images/index_page_images/heart_warming_style/exclusive_deals.webp"
-                    class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/heart_warming_style/favorait_brands.avif"
-                    class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/heart_warming_style/og_are_back.avif" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="asserts/images/index_page_images/heart_warming_style/offbeat_style.avif" class="d-block w-100"
-                    alt="..." />
-            </div>
-        </div>
-    </div>
-
-    <!-- westernwear grid -->
-
-    <div>
-        <img alt="trending_today_heading"
-            src="asserts/images/index_page_images/western_wear/western_wear_banner.avif" />
-    </div>
-
-
-    <div class="trending-grid2">
-
-        <img src="asserts/images/index_page_images/western_wear/tees.avif" />
-        <img src="asserts/images/index_page_images/western_wear/shirts.avif" />
-        <img src="asserts/images/index_page_images/western_wear/jeans.avif" />
-        <img src="asserts/images/index_page_images/western_wear/trousers.avif" />
-    </div>
-    <!-- 
-ethinic wear grid -->
-
-    <div>
-        <img alt="trending_today_heading"
-            src="asserts/images/index_page_images/ethinic_wear_grid/ethinic_wear_banner.avif" />
-    </div>
-
-
-    <div class="trending-grid2">
-
-        <img src="asserts/images/index_page_images/ethinic_wear_grid/mens_ethinic.avif" />
-        <img src="asserts/images/index_page_images/ethinic_wear_grid/kurta_suit.avif" />
-        <img src="asserts/images/index_page_images/ethinic_wear_grid/kurti_wear.avif" />
-        <img src="asserts/images/index_page_images/ethinic_wear_grid/sarees.avif" />
-    </div>
-
-
-    <!-- footwear grid -->
-
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/footwear_grid/footwear_banner.avif" />
-    </div>
-
-
-    <div class="trending-grid2">
-
-        <img src="asserts/images/index_page_images/footwear_grid/sports_shoes.avif" />
-        <img src="asserts/images/index_page_images/footwear_grid/sneakers.avif" />
-        <img src="asserts/images/index_page_images/footwear_grid/flipflops.webp" />
-        <img src="asserts/images/index_page_images/footwear_grid/casual.avif" />
-    </div>
-
-
-    <!-- inner and longewear grid -->
-
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/innerwear_grid/innerwear_banner.avif" />
-    </div>
-
-
-    <div class="trending-grid2">
-
-        <img src="asserts/images/index_page_images/innerwear_grid/longewear.avif" />
-        <img src="asserts/images/index_page_images/innerwear_grid/lingrie.avif" />
-        <img src="asserts/images/index_page_images/innerwear_grid/trendy_bras.avif" />
-        <img src="asserts/images/index_page_images/innerwear_grid/panties.avif" />
-    </div>
-
-
-
-    <div>
-        <img alt="trending_today_heading" src="asserts/images/index_page_images/footer/ajio_cares.webp" />
-    </div>
-
-
-    <div>
-        <ul class="d-flex icons">
-            <li><img src="asserts/images/index_page_images/footer_icon/easy_exchange-removebg-preview.png" alt=""></li>
-            <li><img src="asserts/images/index_page_images/footer_icon/handpicked-removebg-preview.png" alt=""></li>
-            <li><img src="asserts/images/index_page_images/footer_icon/assured_quality-removebg-preview.png" alt="">
-            </li>
-        </ul>
-        <ul class="d-flex icons">
-            <li>EASY EXCHANGE</li>
-            <li>100% HANDPICKED</li>
-            <li>ASSURED QUALITY</li>
-        </ul>
-    </div>
-
-
-
-    <footer>
-        <div class="foot_section">
-
-
-            <div class="d-flex justify-content-around foot_lists pt-5 ">
-                <div>
-                    <ul>
-                        <h6> Ajio</h6>
-                        <li>Who We Are</li>
-                        <li>Join Our Team</li>
-                        <li>Terms & Conditions</li>
-                        <li>We Respect Your Privacy</li>
-                        <li>Fees & Payments</li>
-                        <li>Returns & Refunds Policy</li>
-                        <li>Promotions Terms & Condtions</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul>
-                        <h6> Help</h6>
-                        <li>Track Your Order</li>
-                        <li>Frequently asked Questions</li>
-                        <li>Returns</li>
-                        <li>Cancellations</li>
-                        <li>Payments</li>
-                        <li>Customer Care</li>
-                        <li>How Do I Redeem My Coupon</li>
-                    </ul>
-                </div>
-
-
-                <div>
-                    <ul>
-                        <h6>Shop By</h6>
-                        <li>All</li>
-                        <li>Men</li>
-                        <li>Women</li>
-                        <li>Kids</li>
-                        <li>Indie</li>
-                        <li>Stores</li>
-                        <li>New Arrivals</li>
-                        <li>Brand Directory</li>
-                        <li>Home</li>
-                        <li>Collections</li>
-                    </ul>
-                </div>
-
-
-                <div>
-                    <ul>
-                        <h6>Follow Us</h6>
-                        <li>Facebook</li>
-                        <li>Instagram-AJIOlife</li>
-                        <li>Instagram-AJIO LUXE</li>
-                        <li>Twitter</li>
-                        <li>Pinterest</li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr>
-            <div class="payment_col d-flex justify-content-around">
-                <div class="paymen fs-6">
-                    Payment methods
-                    <div class="d-flex">
-                        <a href=""><img src="asserts/images/index_page_images/footer/net_banking.png" alt=""></a>
-                        <a href=""><img src="asserts/images/index_page_images/footer/verified_visa.png" alt=""></a>
-                        <a href=""><img src="asserts/images/index_page_images/footer/master_card.png" alt=""></a>
-                        <a href=""><img src="asserts/images/index_page_images/footer/cash_on_delivary.png" alt=""></a>
-                        <a href=""><img src="asserts/images/index_page_images/footer/jio_money.png" alt=""></a>
-                    </div>
-                </div>
-
-
-                <div class="encryption">
-                    encryption
-                    <a href=""><img src="asserts/images/index_page_images/footer/net_banking.png" alt=""></a>
-
-                </div>
-
-            </div>
-
-
-        </div>
-    </footer>
-
-
-
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
 
 </html>

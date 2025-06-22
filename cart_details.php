@@ -228,42 +228,6 @@
         </div>
     </div>
 
-    <!DOCTYPE html>
-<html>
-<head>
-  <title>Simple Sidebar Toggle</title>
-</head>
-<body>
-
-  <!-- Toggle Button -->
-  <button onclick="toggleSidebar()">Toggle Sidebar</button>
-
-  <!-- Sidebar -->
-  <div id="sidebar" style="width: 200px; height: 100vh; background-color: lightblue; padding: 20px;">
-    <p>This is the sidebar</p>
-  </div>
-
-  <!-- Main Content -->
-  <div style="margin-left: 210px;">
-    <h2>Main Content Area</h2>
-    <p>This is your main page content.</p>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    function toggleSidebar() {
-      var sidebar = document.getElementById("sidebar");
-
-      if (sidebar.style.display === "none") {
-        sidebar.style.display = "block";
-      } else {
-        sidebar.style.display = "none";
-      }
-    }
-  </script>
-
-</body>
-</html>
 
     <!---------------------- Footer start ----------------->
     <footer>

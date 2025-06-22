@@ -138,6 +138,10 @@ img {
 .bi-bag {
     color: #fff;
 }
+.list-unstyled a{
+  text-decoration: none !important;
+  color: #6c757d !important;
+}
 
 .navbar {
     height: 92px;
