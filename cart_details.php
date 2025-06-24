@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Shopping Bag | AJIO</title>
 
-    <link rel="stylesheet" href="style_clone.css">
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="asserts/css/style_clone.css">
+    <link rel="stylesheet" href="asserts/css/cart.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -208,118 +208,12 @@
             </div>
         </div>
     </div>
-
-    <div class="bottom-bar">
-        <div class="bottom-bar-info">
-            <img src="images/cart_images/secure-payment.png" alt="">
-            <div>SECURE PAYMENTS</div>
-        </div>
-        <div class="bottom-bar-info">
-            <img src="images/cart_images/rupee.png" alt="">
-            <div>CASH ON DELIVERY</div>
-        </div>
-        <div class="bottom-bar-info">
-            <img src="images/cart_images/quality.png" alt="">
-            <div>ASSURED QUALITY</div>
-        </div>
-        <div class="bottom-bar-info">
-            <img src="images/cart_images/return.png" alt="">
-            <div>EASY RETURNS</div>
-        </div>
-    </div>
-    <!---------------------- Footer start ----------------->
-    <footer>
-        <div><img style="min-width:1263px; width: 100%;" src="images/stripe/above-footer.png" alt=""></div>
-        <div class="menu_item">
-            <div class="item_list">
-                <div class="headline">Ajio</div>
-                <div class="ftr_items">
-                    <a href="">Who we are</a>
-                    <a href="">Join our team</a>
-                    <a href="">Terms & conditions</a>
-                    <a href="">We respect your privacy</a>
-                    <a href="">Fee & Payments</a>
-                    <a href="">Return & Refunds policy</a>
-                    <a href="">Promotions Terms & Conditions</a>
-                </div>
-            </div>
-            <div class="item_list">
-                <div class="headline">Help</div>
-                <div class="ftr_items">
-                    <a href="">Track your order</a>
-                    <a href="">Frequently Asked Questions</a>
-                    <a href="">Returns</a>
-                    <a href="">Cancellations</a>
-                    <a href="">Payments</a>
-                    <a href="">Customer Care</a>
-                    <a href="">How Do I Redeem My Coupon</a>
-                </div>
-            </div>
-            <div class="item_list">
-                <div class="headline">Shop By</div>
-                <div class="ftr_items">
-                    <a href="">Men</a>
-                    <a href="">Women</a>
-                    <a href="">Kids</a>
-                    <a href="">Indie</a>
-                    <a href="">Stores</a>
-                    <a href="">New Arrivals</a>
-                    <a href="">Bramd Directory</a>
-                    <a href="">Home</a>
-                    <a href="">Collections</a>
-                </div>
-            </div>
-            <div class="item_list">
-                <div class="headline">Follow Us</div>
-                <div class="ftr_items">
-                    <a href="">Facebook</a>
-                    <a href="">Instagram</a>
-                    <a href="">Terms & conditions</a>
-                    <a href="">Twitter</a>
-                    <a href="">Pinterest</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="payment">
-            <div id="payment_method">
-                <div class="pay_title">
-                    <p>Payment Methods</p>
-                </div>
-                <div class="pay_logo">
-                    <div class="pay_img">
-                        <a href=""><img src="images/footer/net_banking.jpg" alt=""></a>
-                    </div>
-                    <div class="pay_img">
-                        <a href=""><img src="images/footer/visa.jpg" alt=""></a>
-                    </div>
-                    <div class="pay_img">
-                        <a href=""><img src="images/footer/master_card.jpg" alt=""></a>
-                    </div>
-                    <div class="pay_img">
-                        <a href=""><img src="images/footer/cash_on_delivery.jpg" alt=""></a>
-                    </div>
-                    <div class="pay_img">
-                        <a href=""><img src="images/footer/jio_money.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div id="secure_payment">
-                <div class="pay_title">
-                    <p>Secure Systems</p>
-                </div>
-                <div class="pay_img">
-                    <a href="">
-                        <img class="ssl-img" src="images/footer/ssl.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--------------------- Footer end ------------------->
+    
+<?php include 'includes/footer.php'?>
+   
 </body>
 
 </html>
 
-<script src="cart.js"></script>
-<script src="header.js"></script>
+<script src="asserts/js/cart.js"></script>
+<script src="asserts/js/header.js"></script>
