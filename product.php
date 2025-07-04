@@ -7,9 +7,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>products page</title>
-  <link rel="stylesheet" href="asserts/css/style.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="asserts/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+   
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -263,115 +265,85 @@
       </div>
     </div>
   </div>
-  <div class="row g-4 mt-1">
-    <!-- Product 1 -->
-    <div class="col-12 col-sm-6 col-lg-4 position-relative product-card">
-      <div class="position-relative">
-        <img src="https://storage.googleapis.com/a1aa/image/934014fe-1146-446c-d155-4cca4a5fb592.jpg"
-          alt="U.S. Polo Assn. Women High-Rise Straight Fit Jeans front view on model wearing red top and white shoes" />
-        <div class="quick-view">QUICK VIEW</div>
+   <div class="container py-5">
+    <div class="row text-center">
+      <!-- Product 1 -->
+        <div class="col-12 col-sm-4 position-relative mb-4">
+        <div class="label label-bestseller">BESTSELLER</div>
+        <img
+          src="asserts/images/product_page_images/product_grid_img/maroon_shirt.avif"
+          alt="Nivea Soft Light Moisturiser jar open and closed on white background"
+          class="img-fluid mx-auto d-block "
+        />
+        <h3 class="text-uppercase text-warning fw-semibold mt-3" style="font-family: Georgia, serif; font-size: 13px;">
+          NIVEA
+        </h3>
+        <p class="mb-1">Soft Light Moisturiser</p>
+        <div class="d-inline-flex align-items-center justify-content-center bg-success text-white rounded px-3 py-1 fw-semibold mx-auto" style="font-size: 14px; user-select:none;">
+          4.3 <i class="fas fa-star ms-1"></i> | 1K
+        </div>
+        <p class="fw-semibold mt-2 mb-0" style="font-size: 14px;">
+          ₹325
+          <span class="text-muted text-decoration-line-through ms-1">₹650</span>
+          <span class="text-warning ms-1" style="font-size: 12px;">(50% off)</span>
+        </p>
+        <p class="text-success fw-semibold mt-1 d-flex justify-content-center align-items-center gap-1" style="font-size: 13px;">
+          <i class="fas fa-percent"></i> Offer Price: ₹286
+        </p>
       </div>
-      <div class="product-brand mt-1">U.S. Polo Assn.</div>
-      <div class="product-name">Women High-Rise Straight Fit Jeans</div>
-      <div class="rating">4.3★ | 27</div>
-      <div class="price mt-1">
-        <span class="original">₹1,347</span>
-        <span class="fw-semibold ms-1">₹743</span>
-        <span class="discount">(45% off)</span>
+      <!-- Product 2 -->
+      <div class="col-12 col-sm-4 position-relative mb-4">
+        <div class="label label-bestseller">BESTSELLER</div>
+        <img
+          src="asserts/images/product_page_images/product_grid_img/oversized_tshirt.avif"
+          alt="Woman wearing blue floral flared kurta set with dupatta standing indoors with stairs and curtain background"
+          class="img-fluid mx-auto d-block"
+        />
+        <h3 class="text-warning fw-semibold mt-3" style="font-family: Georgia, serif; font-size: 13px;">
+          Kiana House Of Fashion
+        </h3>
+        <p class="mb-1">Women Floral Flared Kurta Set</p>
+        <div class="d-inline-flex align-items-center justify-content-center bg-danger text-white rounded px-3 py-1 fw-semibold mx-auto" style="font-size: 14px; user-select:none;">
+          2.6 <i class="fas fa-star ms-1"></i> | 219
+        </div>
+        <p class="fw-semibold mt-2 mb-0" style="font-size: 14px;">
+          ₹719
+          <span class="text-muted text-decoration-line-through ms-1">₹2,398</span>
+          <span class="text-warning ms-1" style="font-size: 12px;">(70% off)</span>
+        </p>
+        <p class="text-success fw-semibold mt-1 d-flex justify-content-center align-items-center gap-1" style="font-size: 13px;">
+          <i class="fas fa-percent"></i> Offer Price: ₹503
+        </p>
       </div>
-      <div class="offer-price mt-1">
-        <i class="fas fa-circle"></i> Offer Price: ₹1,091
-      </div>
-    </div>
-    <!-- Product 2 -->
-    <div class="col-12 col-sm-6 col-lg-4 product-card">
-      <img src="https://storage.googleapis.com/a1aa/image/9594baed-4983-4c4e-3318-03e7a633ec9e.jpg"
-        alt="SPYKAR Men Low-Rise Skinny Fit Jeans front view on model wearing red top and white shoes" />
-      <div class="product-brand mt-1">SPYKAR</div>
-      <div class="product-name">Men Low-Rise Skinny Fit Jeans</div>
-      <div class="rating">3.4★ | 136</div>
-      <div class="price mt-1">
-        <span class="original">₹1,794</span>
-        <span class="fw-semibold ms-1">₹899</span>
-        <span class="discount">(54% off)</span>
-      </div>
-      <div class="offer-price mt-1">
-        <i class="fas fa-circle"></i> Offer Price: ₹1,435
-      </div>
-    </div>
-    <!-- Product 3 -->
-    <div class="col-12 col-sm-6 col-lg-4 product-card">
-      <img src="https://storage.googleapis.com/a1aa/image/3a02d343-1f64-4784-c0e6-7435ef450c85.jpg"
-        alt="U.S. Polo Assn. Women High-Rise Wide-Leg Jeans front view on model wearing green top and white shoes" />
-      <div class="product-brand mt-1">U.S. Polo Assn.</div>
-      <div class="product-name">Women High-Rise Wide-Leg Jeans</div>
-      <div class="rating">3.7★ | 28</div>
-      <div class="price mt-1">
-        <span class="original">₹1,512</span>
-        <span class="fw-semibold ms-1">₹746</span>
-        <span class="discount">(45% off)</span>
-      </div>
-      <div class="offer-price mt-1">
-        <i class="fas fa-circle"></i> Offer Price: ₹1,225
-      </div>
-    </div>
-    <!-- Product 4 -->
-    <div class="col-12 col-sm-6 col-lg-4 position-relative product-card">
-      <div class="position-relative">
-        <img src="https://storage.googleapis.com/a1aa/image/7f6174c0-60cc-4eef-7079-b9168db30b77.jpg"
-          alt="U.S. Polo Assn. Women Heavy-Wash Wide-Leg Jeans front view on model wearing pink top and white shoes" />
-        <div class="bestseller-badge">BESTSELLER</div>
-      </div>
-      <div class="product-brand mt-1">U.S. Polo Assn.</div>
-      <div class="product-name">Women Heavy-Wash Wide-Leg Jeans</div>
-      <div class="rating">3.8★ | 188</div>
-      <div class="price mt-1">
-        <span class="original">₹1,402</span>
-        <span class="fw-semibold ms-1">₹229</span>
-        <span class="discount">(39% off)</span>
-      </div>
-      <div class="offer-price mt-1">
-        <i class="fas fa-circle"></i> Offer Price: ₹1,206
-      </div>
-    </div>
-    <!-- Product 5 -->
-    <div class="col-12 col-sm-6 col-lg-4 product-card">
-      <img src="https://storage.googleapis.com/a1aa/image/a7accd50-2e05-4124-7745-23f2e3053d33.jpg"
-        alt="U.S. Polo Assn. Women High-Rise Bootcut Jeans front view on model wearing white shoes" />
-      <div class="product-brand mt-1">U.S. Polo Assn.</div>
-      <div class="product-name">Women High-Rise Bootcut Jeans</div>
-      <div class="rating">3.6★ | 58</div>
-      <div class="price mt-1">
-        <span class="original">₹1,483</span>
-        <span class="fw-semibold ms-1">₹399</span>
-        <span class="discount">(47% off)</span>
-      </div>
-      <div class="offer-price mt-1">
-        <i class="fas fa-circle"></i> Offer Price: ₹1,275
+      <!-- Product 3 -->
+      <div class="col-12 col-sm-4 position-relative mb-4">
+        <div class="label label-ad">AD</div>
+        <img
+          src="asserts/images/product_page_images/product_grid_img/nike_shoes.avif"
+          alt="Top view of pair of black and orange ASICS running shoes on white background"
+          class="img-fluid mx-auto d-block"
+        />
+        <h3 class="text-uppercase text-warning fw-semibold mt-3" style="font-family: Georgia, serif; font-size: 13px;">
+          ASICS
+        </h3>
+        <p class="mb-1">Men Gt-2000 12 Running Shoes</p>
+        <div class="d-inline-flex align-items-center justify-content-center bg-success text-white rounded px-3 py-1 fw-semibold mx-auto" style="font-size: 14px; user-select:none;">
+          3.1 <i class="fas fa-star ms-1"></i> | 9
+        </div>
+        <p class="fw-semibold mt-2 mb-0" style="font-size: 14px;">
+          ₹9,489
+          <span class="text-muted text-decoration-line-through ms-1">₹12,999</span>
+          <span class="text-warning ms-1" style="font-size: 12px;">(27% off)</span>
+        </p>
+        <p class="text-success fw-semibold mt-1 d-flex justify-content-center align-items-center gap-1" style="font-size: 13px;">
+          <i class="fas fa-percent"></i> Offer Price: ₹8,489
+        </p>
       </div>
     </div>
-    <!-- Product 6 -->
-    <div class="col-12 col-sm-6 col-lg-4 position-relative product-card">
-      <div class="position-relative">
-        <img src="https://storage.googleapis.com/a1aa/image/e1768911-003f-4042-16f3-dbdcb1f2b1a0.jpg"
-          alt="U.S. Polo Assn. Boys Lightly Washed Slim Fit Jeans front view" />
-        <div class="ad-badge">AD</div>
-      </div>
-      <div class="product-brand mt-1">U.S. Polo Assn.</div>
-      <div class="product-name">Boys Lightly Washed Slim Fit Jeans</div>
-      <div class="rating">4★ | 13</div>
-      <div class="price mt-1">
-        <span class="original">₹1,300</span>
-        <span class="fw-semibold ms-1">₹599</span>
-        <span class="discount">(50% off)</span>
-      </div>
-      <div class="offer-price mt-1">
-        <i class="fas fa-circle"></i> Offer Price: ₹1,040
-      </div>
-    </div>
+  </div>
+  
 
-  </div>
-  </div>
+</div>
   </div>
 
 </div>

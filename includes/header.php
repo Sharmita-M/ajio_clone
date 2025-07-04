@@ -12,58 +12,101 @@
             <div class="pe-5 ">
 
                 <div class="d-flex align-items-start justify-content-end links" id="link_btn">
-                    <a href="#" class="nav-link " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign In / Join AJIO</a>
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <main class="container d-flex flex-column align-items-start" style="max-width: 400px;">
-    <h1 class="mb-4 fs-4 text-dark">Welcome to AJIO</h1>
-    <form class="w-100">
-      <label for="mobile" class="form-label text-secondary mb-3" style="font-size: 0.9rem;">
-        Enter Mobile Number <span class="text-secondary">*</span>
-      </label>
-      <input
-        type="tel"
-        id="mobile"
-        name="mobile"
-        class="form-control mb-5"
-        required
-        autocomplete="tel"
-      />
-      <button type="submit" class="btn btn-continue w-100 mb-4 text-white py-2">
-        CONTINUE
-      </button>
-    </form>
-    <p class="text-secondary small mb-0" style="max-width: 350px;">
-      By Signing In, I agree to
-      <a href="#" class="text-link">Terms &amp; Conditions</a> and
-      <a href="#" class="text-link">Privacy Policy</a>
-    </p>
-  </main>
+                    <a href="#" class="nav-link " data-bs-toggle="modal" data-bs-target="#signupModal" >Sign In / Join AJIO</a>
 
-  <footer class="container mt-5" style="max-width: 400px;">
-    <div class="d-flex align-items-start bg-warning bg-opacity-25 border border-warning rounded p-3 text-warning small">
-      <i class="far fa-envelope me-3 fs-5"></i>
-      <p class="mb-0">
-        Email based login is no longer available. Please
-        <a href="#" class="text-link">click here</a>
-        to restore your mobile number.
-      </p>
-    </div>
-  </footer>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+                     <div
+    class="modal fade"
+    id="signupModal"
+    tabindex="-1"
+    aria-labelledby="signupModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h1 class="h4 mb-2">Welcome to AJIO</h1>
+        <p class="mb-3">Please set up your account</p>
+
+        <div class="d-flex justify-content-between align-items-center mb-1">
+            <button type="button" class="btn btn-link p-0" data-bs-dismiss="modal" aria-label="Close">Close</button>
+          <button type="button" class="btn btn-link p-0" data-bs-dismiss="modal" aria-label="Edit">Edit</button>
+        </div>
+       
+
+        <form>
+          <fieldset class="mb-4">
+            <legend class="col-form-label pt-0 mb-2">Gender:</legend>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+              />
+              <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+              />
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+          </fieldset>
+
+          <div class="mb-4">
+            <label for="name" class="form-label fw-semibold">Name</label>
+            <input
+              type="text"
+              class="form-control border-bottom border-yellow-800 rounded-0"
+              id="name"
+              autocomplete="off"
+              placeholder=""
+            />
+          </div>
+
+          <div class="mb-4">
+            <input
+              type="email"
+              class="form-control border-bottom rounded-0"
+              id="email"
+              placeholder="Email"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="mb-4">
+            <input
+              type="text"
+              class="form-control border-bottom rounded-0"
+              id="invite"
+              placeholder="Invite code (optional)"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-check mb-4">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="agree"
+            />
+            <label class="form-check-label small" for="agree">
+              By Signing Up, I agree to <a href="#" class="text-primary fw-semibold text-decoration-none">Terms and Conditions.</a>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-warning w-100 text-white fw-semibold text-uppercase">
+            Send OTP
+          </button>
+        </form>
       </div>
     </div>
   </div>
-</div>
+                    
                     <a href="#" class="nav-link ms-4 ">Customer Care</a>
                     <a href="#" class="btn-luxe ms-3 d-flex align-items-center justify-content-center">Visit
                         AJIOLUXE</a>
