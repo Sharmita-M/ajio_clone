@@ -7,9 +7,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>products page</title>
-  <link rel="stylesheet" href="asserts/css/style.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="asserts/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+   
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -266,13 +268,12 @@
    <div class="container py-5">
     <div class="row text-center">
       <!-- Product 1 -->
-      <div class="col-12 col-sm-4 position-relative mb-4">
+        <div class="col-12 col-sm-4 position-relative mb-4">
         <div class="label label-bestseller">BESTSELLER</div>
         <img
-          src="https://storage.googleapis.com/a1aa/image/f8f542d6-11d6-48e1-f79d-b677d8e3f5dc.jpg"
+          src="asserts/images/product_page_images/product_grid_img/maroon_shirt.avif"
           alt="Nivea Soft Light Moisturiser jar open and closed on white background"
-          class="img-fluid mx-auto d-block"
-          style="max-height: 300px; width: auto;"
+          class="img-fluid mx-auto d-block "
         />
         <h3 class="text-uppercase text-warning fw-semibold mt-3" style="font-family: Georgia, serif; font-size: 13px;">
           NIVEA
@@ -294,10 +295,9 @@
       <div class="col-12 col-sm-4 position-relative mb-4">
         <div class="label label-bestseller">BESTSELLER</div>
         <img
-          src="https://storage.googleapis.com/a1aa/image/7e198e12-d89e-47b4-461e-f3b7cc92ce53.jpg"
+          src="asserts/images/product_page_images/product_grid_img/oversized_tshirt.avif"
           alt="Woman wearing blue floral flared kurta set with dupatta standing indoors with stairs and curtain background"
           class="img-fluid mx-auto d-block"
-          style="max-height: 400px; width: auto;"
         />
         <h3 class="text-warning fw-semibold mt-3" style="font-family: Georgia, serif; font-size: 13px;">
           Kiana House Of Fashion
@@ -319,10 +319,9 @@
       <div class="col-12 col-sm-4 position-relative mb-4">
         <div class="label label-ad">AD</div>
         <img
-          src="https://storage.googleapis.com/a1aa/image/cce9f121-d419-4205-6657-78c3d90d3e6a.jpg"
+          src="asserts/images/product_page_images/product_grid_img/nike_shoes.avif"
           alt="Top view of pair of black and orange ASICS running shoes on white background"
           class="img-fluid mx-auto d-block"
-          style="max-height: 300px; width: auto;"
         />
         <h3 class="text-uppercase text-warning fw-semibold mt-3" style="font-family: Georgia, serif; font-size: 13px;">
           ASICS
