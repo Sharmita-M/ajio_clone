@@ -9,9 +9,8 @@
   <title>products page</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="asserts/css/style.css">
+    <link rel="stylesheet" href="asserts/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-   
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,12 +31,12 @@
   </div>
   <!-- accordion start -->
 
-  <div class="container py-3 float-start" style="max-width: 300px;">
+  <div class="container py-3 float-start h-100" style="max-width: 300px;">
     <div class="accordion " id="parentAccordion">
 
       <div class="accordion-item border-0">
         <h2 class="accordion-header" id="headingRefineBy">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRefineBy"
+          <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRefineBy"
             aria-expanded="true" aria-controls="collapseRefineBy">
             <strong>Refine By</strong>
           </button>
@@ -48,7 +47,7 @@
             <div class="accordion" id="refineAccordion">
               <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="headingGender">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseGender" aria-expanded="true" aria-controls="collapseGender">
                     Gender
                   </button>

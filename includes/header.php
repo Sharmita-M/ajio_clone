@@ -620,11 +620,10 @@
 
 
 
-
                     <ul class="navbar-nav">
 
                         <li class="nav-item position-relative me-3">
-                            <input type="text" class="form-control search-input" placeholder="Search AJIO">
+                            <input type="text" class="search-input" placeholder="Search AJIO">
                             <i class="fas fa-search search-icon"></i>
                         </li>
                         <li class="nav-item">
@@ -640,6 +639,7 @@
                     </ul>
                 </div>
             </div>
+        
     </nav>
 </body>
 </html>

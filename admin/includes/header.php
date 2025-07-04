@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <link rel="stylesheet" href="asserts/css/style.css">
-   
-<script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
-</head>
-
-<body>
-
-  <div class="wrapper w-100 d-flex  align-items-start justify-content-between h-100">
-
-
-
-  
-
-    <nav id="sidebar" class="sidebar position-relative">
+ 
+  <div class="row">
+    <div class="col-md-2"> <!-- Sidebar here --> 
+ 
+ <nav id="sidebar" class="sidebar position-fixed start-0 top-0 ">
       <div id="content" class="sidebar-content with-sidebar w-100">
         <div class="scrollbar-container w-100 h-100 d-flex justify-content-center flex-column">
           <a href=""
@@ -45,7 +27,7 @@
 
           <ul class="sidebar-nav position-relative p-0 w-100">
             <li class="sidebar-item">
-              <a href="#dashboardMenu1" class="sidebar-link" onclick="loadContent ('dashboard')"
+              <a href="dashboard.php" class="sidebar-link" onclick="loadContent ('dashboard')"
                                 aria-expanded=" false">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -249,106 +231,46 @@
 
           </ul>
     </nav>
-
-    <!-- side header start -->
-
-    <div class="main">
-      <nav class="navbar-main d-flex justify-content-between align-items-center p-4 navbar navbar-expend navbar-light">
-       <button onclick="toggleSidebar()"  class="sidebar-toggle d-flex align-items-center fs-4 custom-btn ">
-      <span >
-          <i class="fa-solid fa-bars cursor-pointer" id="toggle"></i>
-        </span>
-        </button> 
-        <div class="flex-grow-1"></div>
-    <div class="d-flex align-items-center gap-4">
-      <div class="icon-container position-relative" aria-label="Notifications">
-        <i class="far fa-bell text-dark"></i>
-        <span class="badge-notify">0</span>
-      </div>
     </div>
-
-        <form inline="true" action="" class="ps-4 d-none d-sm-inline-block">
-          <div class="input-group-navbar input-group">
-            <input type="text" placeholder="Search" class="form-holder">
-            <button type="button" class="btn ">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-search lucide">
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.3-4.3"></path>
-              </svg>
-            </button>
-          </div>
-        </form>
-        
-
-      </nav>
-
-        <!-- ........................ -->
-                
-<div  id="main-content" class="content">
-  <!-- Cards Section -->
-  <main class="container my-4">
-    <div class="row g-3">
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="shadow rounded">
-          <div class="card-header-custom">Total Order</div>
-          <div class="text-center py-5 bg-warning rounded-bottom text-dark fw-bold">
-            <p class="fs-3 mb-2">14</p>
-            <p class="text-white fw-normal">View Order</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="shadow rounded">
-          <div class="card-header-custom">Today Order</div>
-          <div class="text-center py-5 bg-info rounded-bottom text-dark fw-bold" style="background-color:#00b39f !important;">
-            <p class="fs-3 mb-2">0</p>
-            <p class="text-white fw-normal">View Order</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="shadow rounded">
-          <div class="card-header-custom">Cancle Order</div>
-          <div class="text-center py-5 bg-danger rounded-bottom text-dark fw-bold">
-            <p class="fs-3 mb-2">0</p>
-            <p class="text-white fw-normal">View Order</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="shadow rounded ">
-          <div class="card-header-custom">Earnings</div>
-          <div class="text-center py-5 bg-white rounded-bottom text-dark fw-bold fs-4 ">
-            Rs 15,957.00
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-</div>
 
 
   <!-- ....................................................... -->
-  
-    </div>
 
 
+  <div class="col-md-10"> <!-- Main content here --> 
+<header class="top-bar py-3 px-5 d-flex justify-content-between align-items-center shadow text-white position-sticky top-0 end-0 w-100 " style=" z-index: 1000;">
+  <!-- Search Bar -->
+  <div class="d-flex align-items-center gap-2">
+    <input type="text" class="form-control form-control-sm" placeholder="Search..." style="max-width: 200px;">
+    <button class="btn btn-light btn-sm text-primary"><i class="fas fa-search"></i></button>
   </div>
 
-  
+  <!-- Right Section -->
+  <div class="d-flex align-items-center gap-3">
+    <!-- Icons -->
+    <div class="d-flex align-items-center gap-3">
 
+      <!-- Notification -->
+      <i class="fas fa-bell fs-5 text-white" title="Notifications" role="button"></i>
 
+      <!-- Settings Dropdown -->
+      <div class="dropdown dropdown-settings ">
+        <i class="fas fa-cog fs-5 text-white dropdown-toggle" role="button" id="settingsDropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="settingsDropdown">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Preferences</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
 
-
-
-
-
-  <script src="asserts/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
- 
-
-</body>
-
-</html>
+    <!-- User Info -->
+    <div class="d-flex align-items-center gap-2">
+      <span class="fw-semibold">Admin</span>
+      <img src="asserts/images/user2.png" alt="Profile" class="rounded-circle" style="width: 36px; height: 36px; object-fit: cover;">
+    </div>
+  </div>
+</header>
+</div>
+</div>

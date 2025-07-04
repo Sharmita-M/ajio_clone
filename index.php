@@ -9,9 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="asserts/images/index_page_images/favicon_title.ico" type="image/x-icon">
     <title>Online Shopping Site for Women, Men, Kids Fashion, Lifestyle & More</title>
-       <link rel="stylesheet" href="asserts/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+           <link rel="stylesheet" href="asserts/css/style.css">
+           
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
  
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,6 +63,7 @@
                             class="d-block w-100" alt="..." />
                     </div>
                     <div class="carousel-item">
+                        
                         <img src="asserts/images/index_page_images/main_banner_images/bonanza.jpg" class="d-block w-100"
                             alt="..." />
                     </div>
