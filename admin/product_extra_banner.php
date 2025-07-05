@@ -1,9 +1,7 @@
-
 <?php include 'includes/header.php'; ?>
 
-
 <div class="flex-grow-1 container-fluid mt-5">
-  <h2 class="section-title text-center">📢 Desktop Banner Management</h2>
+  <h2 class="section-title text-center">📢 Product Banner Management</h2>
 
   <!-- Add Banner Card -->
   <div class="card card-custom">
@@ -15,7 +13,7 @@
           <input type="text" class="form-control" id="bannerTitle" placeholder="E.g. Flash Sale">
         </div>
         <div class="mb-3">
-          <label for="bannerImage" class="form-label">Upload Banner <small class="text-muted">(1920x600)</small></label>
+          <label for="bannerImage" class="form-label">Upload Banner <small class="text-muted">(1000x700)</small></label>
           <input class="form-control" type="file" id="bannerImage">
         </div>
         <button type="submit" class="btn btn-theme w-100">Upload Banner</button>

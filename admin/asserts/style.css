@@ -98,26 +98,12 @@ a.sidebar-link:active{
   color: #fff;
   background-color: rgb(125, 125, 172);
 }
-.sidebar [data-bs-toggle="collapse"]::before {
-  content: ' ';
-  position: absolute;
-  border: solid;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 2px;
-  transform: rotate(45deg);
-  top: 1.5rem;
-  right: 1.7rem;
-  transition: all .2s ease-in-out;
-  width: 0;
-  overflow: hidden;
-}
+
 .blue-text:hover{
   color: rgb(61, 76, 239) !important;
 }
-.sidebar[aria-expanded="false"]::before{
-  transform: rotate(-135deg);
-  top: 1.3rem;
+#sidebarContainer {
+  transition: all 0.3s ease;
 }
 
 .main-content {
@@ -173,10 +159,6 @@ a.sidebar-link:active{
   height:50px;
 }
 
-.content {
-    flex: 1;
-    translate: -5% -270%;
-}
 
 .content h1 {
     margin-bottom: 20px;
@@ -361,6 +343,9 @@ body {
   font-weight: 400;
   color: #666666;
   background: #eaeff4;
+}
+html{
+  overflow-x: hidden !important;
 }
 
 .wrapper1 {
@@ -567,3 +552,75 @@ body {
   .top-bar {
     background-color: #6d61d3;
   }
+
+  /* desktop banner css */
+
+   .gradient-header {
+      background: linear-gradient(to right,rgb(47, 54, 75),rgb(146, 144, 193));
+      color: white;
+      font-weight: 600;
+      padding: 1rem 1.5rem;
+      border-top-left-radius: 0.75rem;
+      border-top-right-radius: 0.75rem;
+    }
+
+  
+    .card-custom {
+      border-radius: 0.75rem;
+      border: none;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2rem;
+    }
+
+    .btn-theme {
+      background: linear-gradient(to right, #6d61d3, #8573f1);
+      color: white;
+      border: none;
+    }
+
+    .btn-theme:hover {
+      background: linear-gradient(to right, #5e52b7, #7466dc);
+    }
+    .section-title {
+      color: #463d96;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    /* desktop banner and mobile banner page */
+
+    .banner-image {
+      width: 130px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .table thead {
+      background-color: #eeeaff;
+      color: #4f45a6;
+    }
+
+    
+    /* testimonial page */
+     .testimonial-content {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0.5rem;
+      background-color: white;
+    }
+    /* location page */
+     .address-box {
+      white-space: pre-line;
+    }
+    /* video page */
+    .video-link {
+      word-break: break-all;
+    }
+
+    .video-card {
+      margin-bottom: 1.5rem;
+    }
+    /* promo code page */
+    .action-btns .btn {
+      padding: 0.3rem 0.6rem;
+    }

@@ -1,61 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Admin - Video Links</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<?php include 'includes/header.php'; ?>
 
-  <style>
-    body {
-      background-color: #f4f6fb;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    .gradient-header {
-      background: linear-gradient(to right,rgb(47, 46, 72),rgb(170, 168, 241));
-      color: white;
-      font-weight: 600;
-      padding: 1rem 1.5rem;
-      border-top-left-radius: 0.75rem;
-      border-top-right-radius: 0.75rem;
-    }
-
-    .card-custom {
-      border-radius: 0.75rem;
-      border: none;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-      margin-bottom: 2rem;
-    }
-
-    .btn-theme {
-      background: linear-gradient(to right, #6d61d3, #8573f1);
-      color: white;
-      border: none;
-    }
-
-    .btn-theme:hover {
-      background: linear-gradient(to right, #5e52b7, #7466dc);
-    }
-
-    .section-title {
-      color: #463d96;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-
-    .video-link {
-      word-break: break-all;
-    }
-
-    .video-card {
-      margin-bottom: 1.5rem;
-    }
-  </style>
-</head>
-<body>
-
-<div class="container py-5">
+<div  class="flex-grow-1 container-fluid mt-5">
   <h2 class="section-title text-center">🎬 Video Management</h2>
 
   <!-- Add Video Card -->
@@ -92,7 +37,10 @@
   </div>
 </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+         
+
+<?php include 'includes/footer.php'; ?>
+</div>
+
+ 
+

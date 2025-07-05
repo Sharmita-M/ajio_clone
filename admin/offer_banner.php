@@ -1,60 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Banner Admin - Card Layout</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
+<?php include 'includes/header.php'; ?>
 
-
-    .gradient-header {
-      background: linear-gradient(to right, #6d61d3, #8573f1);
-      color: white;
-      font-weight: 600;
-      padding: 1rem 1.5rem;
-      border-top-left-radius: 0.75rem;
-      border-top-right-radius: 0.75rem;
-    }
-
-    .card-custom {
-      border-radius: 0.75rem;
-      border: none;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-      margin-bottom: 2rem;
-    }
-
-    .btn-theme {
-      background: linear-gradient(to right, #6d61d3, #8573f1);
-      color: white;
-      border: none;
-    }
-
-    .btn-theme:hover {
-      background: linear-gradient(to right, #5e52b7, #7466dc);
-    }
-
-    .banner-image {
-      width: 130px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    .table thead {
-      background-color: #eeeaff;
-      color: #4f45a6;
-    }
-
-    .section-title {
-      color: #463d96;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-  </style>
-</head>
-<body>
-
-<div class="container py-5">
+<div class="flex-grow-1 container-fluid mt-5">
 
   <!-- Add Banner Card -->
   <div class="card card-custom">
@@ -108,7 +54,5 @@
   </div>
 </div>
 
-<!-- Bootstrap Script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
+</div>

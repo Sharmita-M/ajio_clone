@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Promo Code Manager</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    body {
-      background-color: #f8f9fc;
-    }
-    .card-header {
-      background: linear-gradient(to right, #6d61d3, #8573f1);
-      color: white;
-      font-weight: 500;
-    }
-    .action-btns .btn {
-      padding: 0.3rem 0.6rem;
-    }
-  </style>
-</head>
-<body>
+<?php include 'includes/header.php'; ?>
 
-<div class="container py-5">
+<div cclass="flex-grow-1 container-fluid mt-5">
   <!-- Section Title -->
   <h2 class="text-center mb-4 text-primary-emphasis fw-bold">🎫 Promo Code Management</h2>
 
   <!-- Form Section -->
   <div class="card shadow mb-4">
-    <div class="card-header">➕ Create a New Promo Code</div>
+    <div class="gradient-header">➕ Create a New Promo Code</div>
     <div class="card-body">
       <form>
         <div class="row g-3">
@@ -63,7 +42,7 @@
 
   <!-- Table Section -->
   <div class="card shadow">
-    <div class="card-header">📋 Available Promo Codes</div>
+    <div class="gradient-header">📋 Available Promo Codes</div>
     <div class="card-body table-responsive">
       <table class="table table-hover text-center align-middle">
         <thead class="table-light">
@@ -105,7 +84,6 @@
   </div>
 </div>
 
-<!-- Bootstrap Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
+</div>
+
