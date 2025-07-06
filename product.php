@@ -268,7 +268,7 @@
         <div class="container">
             <div class="row text-center">
                 <!-- Product 1 -->
-                <div class="col-12 col-sm-4 position-relative mb-4">
+                <div class="col-12 col-sm-4 position-relative mb-4" onclick="window.location.href='product_detail.php'">
                     <div class="label label-bestseller">BESTSELLER</div>
                     <img src="asserts/images/product_page_images/product_grid_img/maroon_shirt.avif"
                         alt="Nivea Soft Light Moisturiser jar open and closed on white background"
@@ -477,7 +477,7 @@
                     </p>
                 </div>
                 <!-- Product 3 -->
-                <div class="col-12 col-sm-4 position-relative mb-4">
+                <div class="col-12 col-sm-4 position-relative mb-4" onclick="window.location.href='product_detail.php'">
                     <div class="label label-ad">AD</div>
                     <img src="asserts/images/product_page_images/product_grid_img/nike_shoes.avif"
                         alt="Top view of pair of black and orange ASICS running shoes on white background"

@@ -1,107 +1,299 @@
-<?php include 'includes/header.php'?>
+<?php include 'includes/header.php'; ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Product Page</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="asserts/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<div class="container py-4">
+        <nav class="mb-3 " style="font-size: 12px; color: #666; letter-spacing: 0.05em;">
+                Home / Men / Western Wear / Shirts / Men Regular Fit Shirt with Patch Pocket
+        </nav>
 
-</head>
- <style>
-    
-  </style>
-</head>
-<body>
-  <div class="container py-4">
-    <!-- Breadcrumb -->
-    <nav class="mb-4 text-secondary small fw-light">
-      Home / Men / Western Wear / Shirts / Men Regular Fit Shirt
-    </nav>
-    <div class="d-flex flex-column flex-lg-row gap-4 justify-content-center">
-      <!-- Left side: thumbnails and main image -->
-      <div class="d-flex gap-3 justify-content-center">
-        <div class="d-flex flex-column align-items-center">
-          <button class="btn btn-link p-0 text-secondary" aria-label="Scroll up">
-            <i class="fas fa-chevron-up"></i>
-          </button>
-          <div class="thumbs-container d-flex flex-column gap-3 my-2">
-            <img src="https://storage.googleapis.com/a1aa/image/cdaf730d-70ac-4218-98f2-ba6207ed0850.jpg" alt="Front view of a man wearing a black regular fit shirt with collar and buttons, standing against a gray background" class="thumb-img" />
-            <img src="https://storage.googleapis.com/a1aa/image/9a452835-e8c2-4773-e3d5-8d6ee6a5aba0.jpg" alt="Side view of a man wearing a black regular fit shirt with collar and buttons, standing against a gray background" class="thumb-img" />
-            <img src="https://storage.googleapis.com/a1aa/image/342199cd-417f-406a-a8ee-e86723d7bf30.jpg" alt="Back view of a man wearing a black regular fit shirt with collar and buttons, standing against a gray background" class="thumb-img" />
-            <img src="https://storage.googleapis.com/a1aa/image/9a452835-e8c2-4773-e3d5-8d6ee6a5aba0.jpg" alt="Side view of a man wearing a black regular fit shirt with collar and buttons, standing against a gray background" class="thumb-img" />
-            <img src="https://storage.googleapis.com/a1aa/image/a84c432d-245c-45e7-753b-02a977019e8c.jpg" alt="Closeup view of a man wearing a black regular fit shirt with collar and buttons, standing against a gray background" class="thumb-img" />
-          </div>
-          <button class="btn btn-link p-0 text-secondary" aria-label="Scroll down">
-            <i class="fas fa-chevron-down"></i>
-          </button>
-        </div>
-        <div class="position-relative d-flex justify-content-center">
-          <img src="https://storage.googleapis.com/a1aa/image/cdaf730d-70ac-4218-98f2-ba6207ed0850.jpg" alt="Front view of a man wearing a black regular fit shirt with collar and buttons, standing against a gray background" class="main-img" />
-       
-        </div>
-      </div>
-      <!-- Right side: product details -->
-      <div class="text-center" style="max-width: 400px; margin: 0 auto;">
-        <h2 class="mb-1" style="font-size: 14px; font-weight: 600; color: #a67c00;">U.S. POLO ASSN.</h2>
-        <p class="mb-3" style="font-size: 14px; color: #212529;">Men Regular Fit Shirt</p>
-        <p class="mb-1" style="font-size: 24px; font-weight: 600;">₹1,029</p>
-        <p class="small-text-yellow mb-1">
-          MRP <span>₹2,099</span> (51% OFF)
-        </p>
-        <p class="small-text-gray mb-4">Price inclusive of all taxes</p>
-        <div class="d-flex offer-box rounded mx-auto">
-          <div class="offer-left">
-            <div style="padding-top: 12px;">Use Code<br /><strong>FREEDEL</strong></div>
-            <div class="text-primary text-decoration-underline" style="font-size: 11px; cursor: pointer;">T&amp;C</div>
-          </div>
-          <div class="offer-right px-2">
-            <div>Get it for <span style="color: #228B22;">₹1028</span></div>
-            <div style="font-size: 11px; margin-top: 4px;">
-              Free Shipping on 799 and above. Just for you. <a href="#" class="text-primary text-decoration-underline">View All Products&gt;</a>
-            </div>
-          </div>
-        </div>
-        <div class="mb-4">
-          <p class="mb-1" style="font-size: 14px;">Black</p>
-          <div class="color-circle"></div>
-        </div>
-        <div class="mb-3">
-          <p class="mb-2" style="font-size: 14px;">Select Size</p>
-          <div class="d-flex justify-content-center gap-2 mb-2 flex-wrap">
-            <button type="button" class="btn size-btn">S</button>
-            <button type="button" class="btn size-btn">M</button>
-            <button type="button" class="btn size-btn">L</button>
-            <button type="button" class="btn size-btn">XL</button>
-            <button type="button" class="btn size-btn">XXL</button>
-          </div>
-          <div class="check-size d-flex justify-content-center align-items-center gap-1 text-primary" style="font-size: 12px; cursor: pointer; margin-bottom: 1.5rem;">
-            <i class="fas fa-chart-bar"></i>
-            <span>Check Size Chart</span>
-          </div>
-        </div>
-        <div class="delivery-box d-flex align-items-center gap-2 mx-auto">
-          <i class="fas fa-map-marker-alt"></i>
-          <p class="m-0">Select your size to know your estimated delivery date.</p>
-        </div>
-        <button type="button" class="btn btn-add-bag w-100 mb-2 d-flex justify-content-center align-items-center gap-2 mx-auto">
-          <i class="fas fa-shopping-bag"></i> ADD TO BAG
-        </button>
-        <p class="text-muted small mb-4" style="font-size: 11px;">HANDPICKED STYLES | ASSURED QUALITY</p>
-        <button type="button" class="btn btn-wishlist w-100 d-flex justify-content-center align-items-center gap-2 mx-auto">
-          <i class="far fa-heart"></i> SAVE TO WISHLIST
-        </button>
-      </div>
-    </div>
-  </div>
+        <div class="row gx-4 justify-content-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                        <div class="d-flex flex-column me-3 thumbs-container">
+                                <img src="https://storage.googleapis.com/a1aa/image/73a3442d-91af-48e2-0e70-b3bdc20dfbae.jpg"
+                                        alt="Thumbnail image of man wearing maroon shirt front view"
+                                        class="border border-secondary mb-3"
+                                        style="width:50px; height:70px; object-fit:cover; cursor:pointer;" />
+                                <img src="https://storage.googleapis.com/a1aa/image/866844d4-17e9-4879-f53d-a0774a7faebd.jpg"
+                                        alt="Thumbnail image of man wearing maroon shirt side view"
+                                        class="border border-secondary mb-3"
+                                        style="width:50px; height:70px; object-fit:cover; cursor:pointer;" />
+                                <img src="https://storage.googleapis.com/a1aa/image/3d775553-dba6-48ad-423e-e5c084c85ad2.jpg"
+                                        alt="Thumbnail image of man wearing maroon shirt back view"
+                                        class="border border-secondary mb-3"
+                                        style="width:50px; height:70px; object-fit:cover; cursor:pointer;" />
+                                <img src="https://storage.googleapis.com/a1aa/image/9a06efce-842b-4db8-5348-4d4ed91e0e83.jpg"
+                                        alt="Thumbnail image of man wearing maroon shirt full body view"
+                                        class="border border-secondary"
+                                        style="width:50px; height:70px; object-fit:cover; cursor:pointer;" />
+                        </div>
+                        <div class="position-relative flex-grow-1">
+                                <img src="https://storage.googleapis.com/a1aa/image/c2ebe05e-aafb-4215-8673-c84b5afd38ac.jpg"
+                                        alt="Main product image of man wearing maroon shirt with patch pocket, front view"
+                                        class="img-fluid" style="max-height:600px; object-fit:contain; width:100%;" />
+                                <button class="share-btn" aria-label="Share product"><i
+                                                class="fas fa-share-alt"></i></button>
+
+                                                <div class="w-100 mt-4">
+                                <ul class="custom-tabs d-flex list-unstyled mb-0 border-bottom" id="customInfoTabs">
+                                        <li class="custom-tab-item me-2">
+                                                <button class="custom-tab-btn active" data-bs-toggle="tab"
+                                                        data-bs-target="#customReturns">RETURNS</button>
+                                        </li>
+                                        <li class="custom-tab-item">
+                                                <button class="custom-tab-btn" data-bs-toggle="tab"
+                                                        data-bs-target="#customPromise">OUR PROMISE</button>
+                                        </li>
+                                </ul>
+
+                                <div class="custom-tab-content border border-top-0 p-3">
+                                        <div class="custom-tab-pane show active" id="customReturns">
+                                                <p class="mb-0">10 day Return and Exchange <a href="#">click here</a>.
+                                                </p>
+                                        </div>
+                                        <div class="custom-tab-pane" id="customPromise">
+                                                <p class="mb-0">We promise to deliver quality and style every time.</p>
+                                        </div>
+                                </div>
+
+                                <div class="text-end mt-2">
+                                        <a href="#" class="text-decoration-none text-primary">Service FAQs</a>
+                                </div>
+                        </div>
+                        </div>
+
+                        
 
 
+                </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+                <div class="col-md-6 text-center">
+                        <h2 class="text-warning fw-semibold mb-1" style="font-size: 18px;">7 THREADS</h2>
+                        <h1 class="mb-2" style="font-size: 18px; font-weight: 400;">Men Regular Fit Shirt with Patch
+                                Pocket</h1>
+                        <div class="d-flex justify-content-center align-items-center mb-2 gap-2">
+                                <span class="bg-danger text-white fw-semibold px-3 py-1 rounded d-flex align-items-center gap-2"
+                                        style="font-size: 14px; justify-content: center;">
+                                        2.1 <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-secondary" style="font-size: 14px;">37 Ratings</span>
+                        </div>
+                        <div class="text-center">
+                                <div class="container" style="max-width: 320px;">
+                                        <div class="text-center">
+                                                <p class="fs-3 mb-1">₹440</p>
+                                                <p class="text-warning fw-semibold mb-1">
+                                                        MRP <span
+                                                                class="text-decoration-line-through fw-normal">₹1,999</span>
+                                                        <span>(78% OFF)</span>
+                                                </p>
+                                                <p class="text-muted small mb-3">Price inclusive of all taxes</p>
+                                        </div>
+
+                                        <div class="d-flex border rounded p-3">
+                                                <div class="border-end pe-3 text-center">
+                                                        <div class="offer-label">Offer</div>
+                                                        <p class="fw-bold text-warning mb-0">Use Code</p>
+                                                        <p class="fw-bold text-warning mb-1">BLAST</p>
+                                                        <a href="#"
+                                                                class="small text-primary text-decoration-underline">T&amp;C</a>
+                                                </div>
+
+                                                <div class="ps-3 flex-grow-1">
+                                                        <div class="border rounded p-2 mb-1 bg-light small">
+                                                                Get it for <span
+                                                                        class="text-success fw-semibold">₹308</span>
+                                                        </div>
+                                                        <p class="text-muted small mb-1">
+                                                                Up to 600 off on the cart value of 2000.
+                                                        </p>
+                                                        <div class="timer d-flex align-items-center mb-1">
+                                                                <i class="far fa-clock me-1"></i>00h 30m 43s
+                                                        </div>
+                                                        <a href="#"
+                                                                class="small text-primary text-decoration-underline d-inline-block">View
+                                                                All Products&gt;</a>
+                                                </div>
+                                        </div>
+
+                                        <div class="text-end mt-2 small text-decoration-underline"
+                                                style="cursor:pointer;">
+                                                +4 More
+                                        </div>
+                                </div>
+
+                                <div style="font-size: 16px; margin-bottom: 1rem;">Maroon</div>
+                                <div class="color-circle"></div>
+                                <div style="font-size: 16px; margin-bottom: 1rem;">Select Size</div>
+                                <div class="d-flex justify-content-center gap-3 mb-4">
+                                        <button class="size-btn" type="button">S</button>
+                                        <button class="size-btn" type="button">M</button>
+                                        <button class="size-btn" type="button">L</button>
+                                        <button class="size-btn" type="button">XL</button>
+                                        <button class="size-btn" type="button">XXL</button>
+                                </div>
+                                <a href="#" class="d-inline-block text-primary text-decoration-underline mb-4"
+                                        style="font-size: 14px;">
+                                        <i class="fas fa-ruler-combined me-1"></i>Check Size Chart
+                                </a>
+                                <div class="bg-warning bg-opacity-25 border border-warning rounded p-3 mb-4 d-flex justify-content-center align-items-center gap-2 mx-auto"
+                                        style="max-width: 280px; font-size: 16px;">
+                                        <i class="fas fa-map-marker-alt text-warning"></i>
+                                        <span>Select your size to know your estimated delivery date.</span>
+                                </div>
+                                <button class="btn w-50 mb-3"
+                                        style="background-color: #7a5a1a; color: #fff; font-weight: 600; font-size: 16px;">
+                                        <i class="fas fa-shopping-bag me-2"></i>ADD TO BAG
+                                </button>
+                                <div class="text-warning mb-4" style="font-size: 14px; letter-spacing: 0.1em;">
+                                        HANDPICKED STYLES | ASSURED QUALITY
+                                </div>
+                                <button class="btn btn-outline-warning w-50 "
+                                        style="font-weight: 600; font-size: 16px;">
+                                        <i class="far fa-heart"></i> SAVE TO WISHLIST
+                                </button>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<div class="container py-4">
+        <h2 class="divider-line fw-bold" style="font-family: Georgia, serif;">Ratings</h2>
+
+        <div class="d-flex flex-column flex-md-row text-secondary small mt-4">
+                <!-- Left -->
+                <div class="d-flex align-items-center mb-4 mb-md-0 me-md-5" style="min-width: 140px;">
+                        <div class="fs-1 fw-light" style="line-height:1;">2.1</div>
+                        <div class="star-amber ms-2 fs-4">
+                                <i class="fas fa-star"></i>
+                        </div>
+                        <div class="ms-3" style="font-size: 0.875rem; line-height:1;">38 Customers</div>
+                </div>
+
+                <div class="border-start border-secondary mx-md-4 d-none d-md-block"></div>
+
+                <!-- Rating Distribution -->
+                <div class="me-md-4 pe-md-4" style="min-width: 280px;">
+                        <div class="mb-3" style="font-size: 0.75rem; color: #6b7280;">Rating Distribution</div>
+                        <div class="mb-2 d-flex align-items-center">
+                                <div style="width: 40px;" class="d-flex align-items-center gap-1 small text-secondary">
+                                        5 <i class="fas fa-star"></i>
+                                </div>
+                                <div class="bar-bg flex-grow-1 position-relative">
+                                        <div class="bar-fill" style="width: 10%;"></div>
+                                </div>
+                                <div class="ms-2" style="width: 30px; font-weight: 700; color: black;">10%</div>
+                        </div>
+                        <div class="mb-2 d-flex align-items-center">
+                                <div style="width: 40px;" class="d-flex align-items-center gap-1 small text-secondary">
+                                        4 <i class="fas fa-star"></i>
+                                </div>
+                                <div class="bar-bg flex-grow-1 position-relative">
+                                        <div class="bar-fill" style="width: 5%;"></div>
+                                </div>
+                                <div class="ms-2" style="width: 30px; color: #6b7280;">5%</div>
+                        </div>
+                        <div class="mb-2 d-flex align-items-center">
+                                <div style="width: 40px;" class="d-flex align-items-center gap-1 small text-secondary">
+                                        3 <i class="fas fa-star"></i>
+                                </div>
+                                <div class="bar-bg flex-grow-1 position-relative">
+                                        <div class="bar-fill" style="width: 23%;"></div>
+                                </div>
+                                <div class="ms-2" style="width: 30px; font-weight: 700; color: black;">23%</div>
+                        </div>
+                        <div class="mb-2 d-flex align-items-center">
+                                <div style="width: 40px;" class="d-flex align-items-center gap-1 small text-secondary">
+                                        2 <i class="fas fa-star"></i>
+                                </div>
+                                <div class="bar-bg flex-grow-1 position-relative">
+                                        <div class="bar-fill" style="width: 7%;"></div>
+                                </div>
+                                <div class="ms-2" style="width: 30px; color: #6b7280;">7%</div>
+                        </div>
+                        <div class="mb-2 d-flex align-items-center">
+                                <div style="width: 40px;" class="d-flex align-items-center gap-1 small text-secondary">
+                                        1 <i class="fas fa-star"></i>
+                                </div>
+                                <div class="bar-bg flex-grow-1 position-relative">
+                                        <div class="bar-fill" style="width: 52%;"></div>
+                                </div>
+                                <div class="ms-2" style="width: 30px; font-weight: 700; color: black;">52%</div>
+                        </div>
+                </div>
+
+                <div class="border-start border-secondary mx-md-4 d-none d-md-block"></div>
+
+                <!-- Customer Opinion -->
+                <div class="d-flex flex-column flex-md-row flex-grow-1">
+                        <div class="me-md-5" style="min-width: 280px;">
+                                <div class="fw-bold mb-3 text-dark" style="font-size: 0.875rem;">Customer Opinion</div>
+                                <div class="mb-2" style="font-size: 0.75rem; color: #6b7280;">How was the Product fit?
+                                </div>
+                                <div class="mb-2 d-flex align-items-center" style="font-size: 0.75rem; color: #6b7280;">
+                                        <div style="width: 110px;">Perfect(30%)</div>
+                                        <div class="bar-bg flex-grow-1 position-relative">
+                                                <div class="bar-fill" style="width: 30%;"></div>
+                                        </div>
+                                </div>
+                                <div class="mb-2 d-flex align-items-center" style="font-size: 0.75rem; color: #6b7280;">
+                                        <div style="width: 110px;">Loose(0%)</div>
+                                        <div class="bar-bg flex-grow-1 position-relative"></div>
+                                </div>
+                                <div class="mb-2 d-flex align-items-center fw-bold text-dark"
+                                        style="font-size: 0.75rem;">
+                                        <div style="width: 110px;">Tight(40%)</div>
+                                        <div class="bar-fill" style="width: 40%; height: 10px; border-radius: 9999px;">
+                                        </div>
+                                </div>
+                                <div class="mb-2 d-flex align-items-center" style="font-size: 0.75rem; color: #6b7280;">
+                                        <div style="width: 110px;">Too Loose(10%)</div>
+                                        <div class="bar-bg flex-grow-1 position-relative">
+                                                <div class="bar-fill" style="width: 10%;"></div>
+                                        </div>
+                                </div>
+                                <div class="mb-2 d-flex align-items-center" style="font-size: 0.75rem; color: #6b7280;">
+                                        <div style="width: 110px;">Too Tight(20%)</div>
+                                        <div class="bar-bg flex-grow-1 position-relative">
+                                                <div class="bar-fill" style="width: 20%;"></div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div style="min-width: 280px;">
+                                <div class="mb-2" style="font-size: 0.75rem; color: #6b7280;">How was the Product
+                                        Quality?</div>
+                                <div class="mb-2 d-flex align-items-center" style="font-size: 0.75rem; color: #6b7280;">
+                                        <div style="width: 110px;">Excellent(0%)</div>
+                                        <div class="bar-bg flex-grow-1 position-relative"></div>
+                                </div>
+                                <div class="mb-2 d-flex align-items-center" style="font-size: 0.75rem; color: #6b7280;">
+                                        <div style="width: 110px;">Very Good(8%)</div>
+                                        <div class="bar-bg flex-grow-1 position-relative">
+                                                <div class="bar-fill" style="width: 8%;"></div>
+                                        </div>
+                                </div>
+                                <div class="mb-2 d-flex align-items-center" style="font-size: 0.75rem; color: #6b7280;">
+                                        <div style="width: 110px;">Average(17%)</div>
+                                        <div class="bar-bg flex-grow-1 position-relative">
+                                                <div class="bar-fill" style="width: 17%;"></div>
+                                        </div>
+                                </div>
+                                <div class="mb-2 d-flex align-items-center" style="font-size: 0.75rem; color: #6b7280;">
+                                        <div style="width: 110px;">Bad(26%)</div>
+                                        <div class="bar-bg flex-grow-1 position-relative">
+                                                <div class="bar-fill" style="width: 26%;"></div>
+                                        </div>
+                                </div>
+                                <div class="mb-2 d-flex align-items-center fw-bold text-dark"
+                                        style="font-size: 0.75rem;">
+                                        <div style="width: 110px;">Very Bad(47%)</div>
+                                        <div class="bar-fill" style="width: 47%; height: 10px; border-radius: 9999px;">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+
+<?php include 'includes/footer.php'; ?>
