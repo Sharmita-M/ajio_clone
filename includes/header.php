@@ -26,7 +26,7 @@
     <div class="container">
      
             <div class="container w-25 ">
-            <a class="navbar-brand" href="#"><img id="aji_nav_logo" src="asserts/images/index_page_images/ajio logo.png"
+            <a class="navbar-brand" href="index.php"><img id="aji_nav_logo" src="asserts/images/index_page_images/ajio logo.png"
                     alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

@@ -8,25 +8,25 @@
         <div class="row gx-4 justify-content-center">
                 <div class="col-md-6 d-flex justify-content-center">
                         <div class="d-flex flex-column me-3 thumbs-container">
-                                <img src="https://storage.googleapis.com/a1aa/image/73a3442d-91af-48e2-0e70-b3bdc20dfbae.jpg"
+                                <img src="asserts/images/product_detail_images/maroon_shirt1.avif"
                                         alt="Thumbnail image of man wearing maroon shirt front view"
                                         class="border border-secondary mb-3"
                                         style="width:50px; height:70px; object-fit:cover; cursor:pointer;" />
-                                <img src="https://storage.googleapis.com/a1aa/image/866844d4-17e9-4879-f53d-a0774a7faebd.jpg"
+                                <img src="asserts/images/product_detail_images/maroon_shirt2.avif"
                                         alt="Thumbnail image of man wearing maroon shirt side view"
                                         class="border border-secondary mb-3"
                                         style="width:50px; height:70px; object-fit:cover; cursor:pointer;" />
-                                <img src="https://storage.googleapis.com/a1aa/image/3d775553-dba6-48ad-423e-e5c084c85ad2.jpg"
+                                <img src="asserts/images/product_detail_images/maroon_shirt3.avif"
                                         alt="Thumbnail image of man wearing maroon shirt back view"
                                         class="border border-secondary mb-3"
                                         style="width:50px; height:70px; object-fit:cover; cursor:pointer;" />
-                                <img src="https://storage.googleapis.com/a1aa/image/9a06efce-842b-4db8-5348-4d4ed91e0e83.jpg"
+                                <img src="asserts/images/product_detail_images/maroon_shirt4.avif"
                                         alt="Thumbnail image of man wearing maroon shirt full body view"
                                         class="border border-secondary"
                                         style="width:50px; height:70px; object-fit:cover; cursor:pointer;" />
                         </div>
                         <div class="position-relative flex-grow-1">
-                                <img src="https://storage.googleapis.com/a1aa/image/c2ebe05e-aafb-4215-8673-c84b5afd38ac.jpg"
+                                <img src="asserts/images/product_detail_images/maroon_shirt1.avif"
                                         alt="Main product image of man wearing maroon shirt with patch pocket, front view"
                                         class="img-fluid" style="max-height:600px; object-fit:contain; width:100%;" />
                                 <button class="share-btn" aria-label="Share product"><i
