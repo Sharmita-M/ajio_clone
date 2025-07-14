@@ -1,3 +1,5 @@
+<?php include 'config.php'?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -252,7 +254,7 @@
 
 
   <div id="mainContent" class="flex-grow-1"> <!-- Main content here -->
-    <header class="top-bar py-3 px-5 d-flex  align-items-center shadow text-white position-sticky top-0 end-0 w-100 ">
+    <header class="top-bar py-3 px-5 d-flex  align-items-center shadow text-white position-sticky top-0 end-0 w-100 z-3">
       <!-- toggle button -->
       <button class="btn btn-sm btn-outline-light d-block" id="sidebarToggle">
         <i class="fas fa-bars"></i>
