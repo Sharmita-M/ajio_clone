@@ -6,17 +6,21 @@ if (empty($_POST['action'])){
 } else {
     $submit = $_POST['action'];
 }
-
-// $datetime = date('Y-m-d H:i:s');
 $datetime = date('Y-m-d_H-i-s'); // safe for filenames on all OS
 
+function slug($category){
+    $tittle = trim($category);
+    $tittle = strtolower($tittle);
+    return str_replace(' ', '-', $tittle);
+}
 
 switch($submit){
     case 'submit':
         $category = mysqli_real_escape_string($db, $_POST['category']);
         $description = mysqli_real_escape_string($db, $_POST['description']);
+        $slug = slug($category);
 
-        $db-> query("INSERT INTO `product_categories` (`pc_id`, `pc_name`, `description`) VALUES ( NULL, '$category', '$description')");
+        $db-> query("INSERT INTO `product_categories` (`pc_id`, `pc_name`, `description`, `pc_slug`) VALUES ( NULL, '$category', '$description', '$slug')");
 
 
         $new = $db-> insert_id;
@@ -42,13 +46,66 @@ switch($submit){
             exit;
         }
 
-        header("Location: ../category.php?sucess");
+        header("Location: ../category.php?success");
 
     break;
+
+    case 'delete':
+        $pc_id = mysqli_real_escape_string($db, $_REQUEST['pc_id']);
+
+        $result = $db-> query("SELECT * FROM `product_categories` WHERE `pc_id` = '$pc_id'");
+            $row = $result-> fetch_object();  
+
+        if(!empty($pc_id)){
+            
+            $upload_path = '../uploads/category/' . $row->pc_image;  
+            unlink($upload_path); 
+
+
+        }else {
+            echo "Invalid category ID.";
+            exit;
+        }
+ 
+
+        $db->query(" DELETE FROM `product_categories` WHERE `pc_id` = '$pc_id'");
+               header("Location: ../category.php?success");
+               exit();
+               break;
+
+
+        case 'update':
+            $pc_id = mysqli_real_escape_string($db, $_POST['edit_id']);
+            $category = mysqli_real_escape_string($db, $_POST['category']);
+            $description = mysqli_real_escape_string($db, $_POST['description']);
+
+            $db-> query("UPDATE `product_categories` SET `pc_name` = '$category', `description` = '$description' WHERE `pc_id` = '$pc_id'");
+
+            if(!empty ($_FILES['image']['name'])) {
+                $old_image = $_FILES['image']['name'];
+            $divide = explode('.', $old_image);
+            $current_name = current($divide);
+            $ext = end($divide);
+            $allowed = array('jpg', 'jpeg', 'png', 'gif');
+
+                if(in_array($ext, $allowed)) {
+                    $new_image = $current_name . '_' . $datetime . '.' . $ext;
+                    $upload_path = '../uploads/category/' . $new_image;
+                    $tempName = $_FILES['image']['tmp_name'];
+                    move_uploaded_file($tempName, $upload_path);
+                    $db->query("UPDATE `product_categories` SET `pc_image` = '$new_image' WHERE `pc_id` = '$pc_id'");
+                } else {
+                    echo "Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed.";
+                    exit;
+                };
+            };
+
+            header("Location: ../category.php?success");
+            break;     
     default:
     echo "Invalid action specified.";
     break;
 
-}
+};
 
 ?>

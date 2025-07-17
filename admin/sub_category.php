@@ -6,30 +6,30 @@
   <div class="card card-custom">
     <div class="gradient-header">➕ Add New Category</div>
     <div class="card-body">
-      <form>
+      <form method ="POST" action="manage/manage-account.php" enctype="multipart/form-data">
          <div class="mb-3">
         <label for="selectCategory" class="form-label">Select Category</label>
         <select class="form-select" id="selectCategory">
           <option selected disabled>Choose category</option>
-          <option value="Men">Men</option>
-          <option value="Women">Women</option>
-          <option value="Electronics">Electronics</option>
-          <option value="Groceries">Groceries</option>
-          <option value="Beauty">Beauty</option>
+        <?php 
+        $cates = $db-> query("SELECT * FROM `product_categories` ORDER BY `pc_id` ASC");
+        while($newCate = $cates-> fetch_object()){?>
+          <option value="<?= $newCate->pc_id;?>"><?= $newCate->pc_name;?></option>
+          <?php };?>
         </select>
       </div>
 
         <div class="mb-3">
           <label for="authorName" class="form-label"> Sub Category Name</label>
-          <input type="text" class="form-control" id="authorName" placeholder="E.g. Men Jeans">
+          <input type="text" class="form-control" id="authorName" placeholder="E.g. Men Jeans" name="subcategory">
         </div>
         <div class="mb-3">
           <label for="bannerImage" class="form-label">Upload Image <small class="text-muted">(400x400)</small></label>
-          <input class="form-control" type="file" id="bannerImage">
+          <input class="form-control" type="file" id="bannerImage" name="image">
         </div>
         <div class="mb-3">
           <label for="testimonialText" class="form-label">Catagory Description</label>
-          <textarea name="testimonialText" id="testimonialText" rows="6" class="form-control testimonial-content"></textarea>
+          <textarea name="testimonialText" id="testimonialText" rows="6" class="form-control testimonial-content" name="description"></textarea>
         </div>
         <button type="submit" class="btn btn-theme w-100">Add Category</button>
       </form>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
-    <link rel="stylesheet" href="asserts/style.css">
+       <link rel="stylesheet" href="asserts/style.css">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"rel="stylesheet" >
+
 </head>
 <body>
     <div class="wrapper1">
@@ -20,29 +22,24 @@
       <div class="login-form">
         <h2>Sign Up</h2>
         <form>
-          <p>
+    
             <label>Email address<span>*</span></label>
-            <input type="text" placeholder="Email" required>
-          </p>
-            <p>
-                <label>Username<span>*</span></label>
+            <input  type="text" placeholder="Email" required>
+        
+                <label class="mt-2">Username<span>*</span></label>
                 <input type="text" placeholder="Username" required>
-            </p>
-          <p>
-            <label>Phone Number<span>*</span></label>
+        
+            <label class="mt-2">Phone Number<span>*</span></label>
             <input type="text" placeholder="Phone Number" required>
-            </p>
-            <p>
-            <label>Enter Password<span>*</span></label>
+         
+            <label class="mt-2">Enter Password<span>*</span></label>
             <input type="password" placeholder="Password" required>
-          </p>
-            <p>
-            <label> Confirm Password<span>*</span></label>
+        
+            <label class="mt-2"> Confirm Password<span>*</span></label>
             <input type="password" placeholder=" Confirm Password" required>
-          </p>
-          <p>
-            <input type="submit" value="Sign in" onclick="location.href='index.php' " />
-          </p>
+        
+           <button type="submit" class="mt-4 mb-4 p-1" value="signin" onclick="location.href='index.php' " > Sign in</button>
+         
     
         </form>
       </div>
@@ -52,5 +49,6 @@
     Made by Sharmita Mahapatra
   </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

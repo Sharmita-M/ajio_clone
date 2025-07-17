@@ -1,4 +1,13 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/header.php'; 
+
+$id= $_REQUEST['id'] ?? '';
+
+if(!empty($id)){
+  $result = $db->query(" SELECT * FROM `product_categories` WHERE `pc_id` = '$id' ");
+  $cate = $result->fetch_object();
+};
+
+?>
 
  <div class="flex-grow-1 container-fluid mt-5 mb-5">
   <h2 class="section-title text-center">📝 Category Management</h2>
@@ -9,18 +18,33 @@
     <div class="card-body">
       <form method ="POST" action="manage/manage-category.php" enctype="multipart/form-data">
         <div class="mb-3">
-          <label for="authorName" class="form-label"> Category Name</label>
-          <input type="text" name="category"  class="form-control" id="authorName" placeholder="E.g. Men Jeans">
+          <label for="authorName" class="form-label" > Category Name</label>
+          <input type="text" name="category"  class="form-control" id="authorName" placeholder="E.g. Men Jeans" value="<?= $cate->pc_name ?? '';?>">
         </div>
         <div class="mb-3">
           <label for="bannerImage" class="form-label">Upload Image <small class="text-muted">(400x400)</small></label>
-          <input class="form-control" name="image" type="file" id="bannerImage">
+          <input class="form-control" name="image" type="file" id="bannerImage" value="<?= $cate->pc_image ?? '';?>">
+          <?php if (!empty($cate->pc_image)){?>
+          <div class="mt-2">
+          <label for="bannerImage" class="form-label d-block">Current Image </label>
+          <img src="uploads/category/<?= $cate->pc_image;?>" alt="current image" style="max-width: 50px;">
+
+          
         </div>
+          <?php };?>
+        </div>
+        
         <div class="mb-3">
           <label for="testimonialText" class="form-label">Catagory Description</label>
-          <textarea name="description" id="testimonialText" rows="6" class="form-control testimonial-content"></textarea>
+          <textarea name="description" id="testimonialText" rows="6" class="form-control testimonial-content" ><?= $cate->description ?? '';?></textarea>
         </div>
+        <?php if(!empty($id)){ ?>
+          <input type="hidden" name="edit_id" value="<?= $cate->pc_id ?? '';?>">
+        <button type="update" name="action" value="update" class="btn btn-theme w-100">Update Category</button>
+
+<?php } else { ?>
         <button type="submit" name="action" value="submit" class="btn btn-theme w-100">Add Category</button>
+<?php } ?>
       </form>
     </div>
   </div>   
@@ -52,8 +76,8 @@
         <tr>
           <td><?= $i++;?></td>
          <td class="text-start">
-              <button class="btn btn-sm btn-outline-primary">Edit</button>
-              <button class="btn btn-sm btn-outline-danger">Delete</button>
+              <button onclick="location.href = '?id=<?= $row->pc_id;?>' " class="btn btn-sm btn-outline-primary">Edit</button>
+              <button onclick="location.href='manage/manage-category.php?action=delete&pc_id=<?= $row->pc_id;?>' " class="btn btn-sm btn-outline-danger">Delete</button>
             </td>
           <td><?= $row-> pc_name?></td>
           <td><?= $row -> description?></td>
@@ -72,7 +96,10 @@
 </div>
 
 <!-- CKEditor CDN -->
-  <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+
+  
 <?php include 'includes/footer.php'; ?>
+<script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/super-build/ckeditor.js"></script>
+
 </div>
 
