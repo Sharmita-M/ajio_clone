@@ -1,4 +1,20 @@
-  <?php include 'includes/header.php'; ?>
+
+  <?php include 'includes/header.php'; 
+
+if (!empty($_SESSION['errorMsg'])):
+    $alertClass = $_SESSION['errorStatus'] === 'success' ? 'alert-success' : 'alert-danger';
+?>
+<div id="sessionAlert" class="alert <?= $alertClass ?> alert-dismissible fade show position-absolute top-0 start-0 w-100 text-center z-3" role="alert">
+  <?= $_SESSION['errorMsg']; ?>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<?php
+    unset($_SESSION['errorMsg'], $_SESSION['errorStatus']);
+endif;
+  
+  
+  ?>
+
    <div class="flex-grow-1 container-fluid mt-5">        
 
                     <main class="main-content ms-5">

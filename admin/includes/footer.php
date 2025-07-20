@@ -10,7 +10,13 @@
          
         <script src="asserts/script.js"></script>
 <script>
- 
+  setTimeout(() => {
+    const alert = document.getElementById('sessionAlert');
+    if (alert) {
+      alert.classList.remove('show'); // hide with fade
+      alert.classList.add('fade');    // ensure fade is active
+    }
+  }, 2000);
 </script>
 
        </div>

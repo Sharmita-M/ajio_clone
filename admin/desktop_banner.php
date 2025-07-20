@@ -1,5 +1,25 @@
 
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/header.php'; 
+$id= $_REQUEST['id'] ?? '';
+$cate = null;
+
+if(!empty($id)){
+  $result = $db->query(" SELECT * FROM `banner` WHERE `id` = '$id' ");
+  $cate = $result->fetch_object();
+};
+
+if (!empty($_SESSION['errorMsg'])):
+    $alertClass = $_SESSION['errorStatus'] === 'success' ? 'alert-success' : 'alert-danger';
+?>
+<div id="sessionAlert" class="alert <?= $alertClass ?> alert-dismissible fade show position-absolute top-0 start-0 w-100 text-center z-3" role="alert">
+  <?= $_SESSION['errorMsg']; ?>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<?php
+    unset($_SESSION['errorMsg'], $_SESSION['errorStatus']);
+endif;
+
+?>
 
 
 <div class="flex-grow-1 container-fluid mt-5">
@@ -12,17 +32,32 @@
       <form method ="POST" action="manage/manage-banner.php" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="bannerTitle" class="form-label">Banner Title</label>
-          <input type="text" name="title" class="form-control" id="bannerTitle" placeholder="E.g. Flash Sale">
+          <input type="text" name="title" class="form-control" id="bannerTitle" placeholder="E.g. Flash Sale" value="<?= $cate->title ?? '';?>">
+        </div>
+        
+        <div class="mb-3">
+          <label for="bannerImage" class="form-label">Upload Banner <small class="text-muted">(1920x600)</small></label>
+          <input class="form-control" name="image" type="file" id="bannerImage" value="<?= $cate->image ?? '';?>">
+         <?php if (!empty($cate->image)){?>
+          <div class="mt-2">
+          <label for="bannerImage" class="form-label d-block">Current Image </label>
+          <img src="uploads/banners/<?= $cate->image;?>" alt="current image" style="max-width: 50px;">
+
+          
+        </div>
+          <?php };?>
         </div>
          <div class="mb-3">
           <label for="testimonialText" class="form-label">Banner Description</label>
-          <textarea name="description" id="testimonialText" rows="6" class="form-control testimonial-content"></textarea>
+          <textarea name="description" id="testimonialText" rows="6" class="form-control testimonial-content"><?=$cate->description ?? '';?></textarea>
         </div>
-        <div class="mb-3">
-          <label for="bannerImage" class="form-label">Upload Banner <small class="text-muted">(1920x600)</small></label>
-          <input class="form-control" name="image" type="file" id="bannerImage">
-        </div>
-        <button type="submit" name="action" value="submit" class="btn btn-theme w-100">Upload Banner</button>
+        <?php if(!empty($id)){ ?>
+          <input type="hidden" name="edit_id" value="<?= $cate->id ?? '';?>">
+        <button type="update" name="action" value="update" class="btn btn-theme w-100">Update Banner</button>
+
+<?php } else { ?>
+        <button type="submit" name="action" value="submit" class="btn btn-theme w-100">Add Banner</button>
+<?php } ?>
       </form>
     </div>
   </div>
@@ -34,25 +69,37 @@
       <table class="table table-bordered align-middle">
         <thead>
           <tr>
-            <th>#</th>
+            <th>SL no</th>
+          <th>Action</th>
             <th>Title</th>
+            <th>Description</th>
             <th>Preview</th>
-            <th>Date</th>
-            <th class="text-center">Actions</th>
+            <th>Date of add</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td class="text-start">
-              <button class="btn btn-sm btn-outline-primary">Edit</button>
-              <button class="btn btn-sm btn-outline-danger">Delete</button>
+         
+           <?php
+          $i = 1;
+          $query = $db-> query(" SELECT * FROM `banner` ORDER BY `id` DESC");
+          while($row = $query-> fetch_object()){
+          
+        ?>
+        <!-- Example Row 1 -->
+        <tr>
+          <td><?= $i++;?></td>
+         <td class="text-start">
+              <button onclick="location.href = '?id=<?= $row->id;?>' " class="btn btn-sm btn-outline-primary">Edit</button>
+              <button onclick="location.href='manage/manage-banner.php?action=delete&id=<?= $row->id;?>' " class="btn btn-sm btn-outline-danger">Delete</button>
             </td>
-            <td>End of Season Sale</td>
-            <td><img src="https://via.placeholder.com/300x80" class="banner-image" alt="banner"></td>
-            <td>2025-07-04</td>
-            
-          </tr>
+          <td><?= $row-> title?></td>
+          <td><?= html_entity_decode($row->description) ?></td>
+          <td><img src="uploads/banners/<?= $row->image?>" alt="no images found" class="img-fluid" style="width: 50px;"></td>
+          <td><?= $row-> create_at?></td>
+        </tr>
+        <?php 
+          };
+        ?>
         
         </tbody>
       </table>

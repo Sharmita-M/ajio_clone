@@ -1,4 +1,13 @@
-<?php include 'config.php'?>
+<?php
+session_start();
+include 'config.php';
+if(empty($_SESSION['a_id'])){
+  $_SESSION['errorMsg'] = 'Please login to access';
+  $_SESSION['errorStatus'] = 'success';
+    header("Location: index.php");
+    exit();
+};
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -283,7 +292,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item text-danger" href="index.php">Logout</a></li>
+              <li><a class="dropdown-item text-danger" href="manage/manage-account.php?submit=logout">Logout</a></li>
             </ul>
           </div>
         </div>
@@ -296,6 +305,7 @@
         </div>
       </div>
     </header>
+    
   
 
 

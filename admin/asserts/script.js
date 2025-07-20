@@ -27,3 +27,5 @@
         console.error("CKEditor init error:", err);
       });
   });
+
+  
