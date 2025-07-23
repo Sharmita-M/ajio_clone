@@ -40,13 +40,13 @@ endif;
           <img src="uploads/category/<?= $cate->pc_image;?>" alt="current image" style="max-width: 50px;">
 
           
-        </div>
+        </div>  
           <?php };?>
         </div>
         
         <div class="mb-3">
           <label for="testimonialText" class="form-label">Catagory Description</label>
-          <textarea name="description" id="testimonialText" rows="6" class="form-control testimonial-content" ><?= $cate->description ?? '';?></textarea>
+          <textarea name="description" id="editor1" rows="6" class="form-control testimonial-content" ><?= $cate->description ?? '';?></textarea>
         </div>
         <?php if(!empty($id)){ ?>
           <input type="hidden" name="edit_id" value="<?= $cate->pc_id ?? '';?>">
@@ -109,7 +109,7 @@ endif;
 
   
 <?php include 'includes/footer.php'; ?>
-<script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/super-build/ckeditor.js"></script>
+
 
 </div>
 

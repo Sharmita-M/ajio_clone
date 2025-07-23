@@ -191,12 +191,7 @@ if(empty($_SESSION['a_id'])){
 
                 <ul class="sidebar-dropdown list-unstyled collapse" id="dashboardMenu8">
 
-                  <li class="sidebar-item">
-                    <a href="promo_code.php" class="sidebar-link">
-                      <span class="align-middle">Add Promo Code</span>
-                    </a>
-
-                  </li>
+               
 
                   <li class="sidebar-item">
                     <a href="category.php" class="sidebar-link">
@@ -247,6 +242,13 @@ if(empty($_SESSION['a_id'])){
 
                   </li>
 
+                     <li class="sidebar-item">
+                    <a href="promo_code.php" class="sidebar-link">
+                      <span class="align-middle">Add Promo Code</span>
+                    </a>
+
+                  </li>
+
                 </ul>
 
               </li>
@@ -262,7 +264,7 @@ if(empty($_SESSION['a_id'])){
   <!-- ....................................................... -->
 
 
-  <div id="mainContent" class="flex-grow-1"> <!-- Main content here -->
+  <div id="mainContent" class="flex-grow-1 w-100"> <!-- Main content here -->
     <header class="top-bar py-3 px-5 d-flex  align-items-center shadow text-white position-sticky top-0 end-0 w-100 z-3">
       <!-- toggle button -->
       <button class="btn btn-sm btn-outline-light d-block" id="sidebarToggle">

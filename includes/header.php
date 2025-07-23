@@ -1,15 +1,11 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="asserts/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,13 +15,11 @@
 </head>
 
 <body>
-
-
     <nav class="navbar navbar-expand-lg bg-white position-sticky top-0 z-3 shadow">
 
     <div class="container">
      
-            <div class="container w-25 ">
+            <div class="container w-25">
             <a class="navbar-brand" href="index.php"><img id="aji_nav_logo" src="asserts/images/index_page_images/ajio logo.png"
                     alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"

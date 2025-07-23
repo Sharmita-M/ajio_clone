@@ -15,7 +15,7 @@
         </div>
         <div class="mb-3">
           <label for="locationAddress" class="form-label">Address</label>
-          <textarea name="locationAddress" id="locationAddress" rows="4" class="form-control" placeholder="Enter full address with PIN, City, State, etc."></textarea>
+          <textarea name="locationAddress" id="editor1" rows="4" class="form-control" placeholder="Enter full address with PIN, City, State, etc."></textarea>
         </div>
         <button type="submit" class="btn btn-theme w-100">Save Address</button>
       </form>

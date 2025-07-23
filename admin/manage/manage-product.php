@@ -84,19 +84,17 @@ $marketPrice = $_POST['marketPrice'] ?? '';
                header("Location: ../product.php");
                exit();        
                break;
-
-   
         case 'update':
             $id = mysqli_real_escape_string($db, $_POST['edit_id']);
             $categoryId = $_POST['categoryId'];
-$sub_cateId = $_POST['sub_cateId'] ;
-$pName = $_POST['pName'] ;
-$description = $_POST['description'] ;
-$size = $_POST['size'];
-$color = $_POST['color'];
-$stock = $_POST['stock'];
-$sellingPrice = $_POST['sellingPrice'];
-$marketPrice = $_POST['marketPrice'];
+            $sub_cateId = $_POST['sub_cateId'] ;
+            $pName = $_POST['pName'] ;
+            $description = $_POST['description'] ;
+            $size = $_POST['size'];
+            $color = $_POST['color'];
+            $stock = $_POST['stock'];
+            $sellingPrice = $_POST['sellingPrice'];
+            $marketPrice = $_POST['marketPrice'];
 
             $updated = $db-> query("UPDATE `product` SET `pc_id` = '$categoryId', `psc_id` = '$sub_cateId' , `product_name` = '$pName' 
             , `product_market_price` = '$marketPrice', `product_selling_price` = '$sellingPrice' , `size_available` = '$size' , `color_available` = '$color' 

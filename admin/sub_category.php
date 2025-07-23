@@ -58,7 +58,7 @@ endif;
 
         <div class="mb-3">
           <label for="testimonialText" class="form-label">Catagory Description</label>
-          <textarea id="testimonialText" rows="6" class="form-control testimonial-content" name="description"><?= $cate->description ?? '';?></textarea>
+          <textarea id="editor1" rows="6" class="form-control testimonial-content" name="description"><?= $cate->description ?? '';?></textarea>
         </div>
         <?php if(!empty($id)){ ?>
           <input type="hidden" name="edit_id" value="<?= $cate->psc_id ?? '';?>">

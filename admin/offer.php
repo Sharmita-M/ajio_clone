@@ -58,7 +58,7 @@
       </div>
         <div class="mb-3">
           <label for="testimonialText" class="form-label">Catagory Description</label>
-          <textarea name="testimonialText" id="testimonialText" rows="6" class="form-control testimonial-content"></textarea>
+          <textarea name="testimonialText" id="editor1" rows="6" class="form-control testimonial-content"></textarea>
         </div>
         <button type="submit" class="btn btn-theme w-100">Add Offer</button>
       </form>
@@ -124,9 +124,6 @@
   </div>
 </div>
 </div>
-
-<!-- CKEditor CDN -->
-  <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 <?php include 'includes/footer.php'; ?>
 </div>
 

@@ -22,7 +22,7 @@ endif;
 ?>
 
 
-<div class="flex-grow-1 container-fluid mt-5">
+<div class="flex-grow-1 w-100 container-fluid mt-5 mx-1">
   <h2 class="section-title text-center">📢 Desktop Banner Management</h2>
 
   <!-- Add Banner Card -->
@@ -49,7 +49,7 @@ endif;
         </div>
          <div class="mb-3">
           <label for="testimonialText" class="form-label">Banner Description</label>
-          <textarea name="description" id="testimonialText" rows="6" class="form-control testimonial-content"><?=$cate->description ?? '';?></textarea>
+          <textarea name="description" id="editor1" rows="6" class="form-control testimonial-content"><?=$cate->description ?? '';?></textarea>
         </div>
         <?php if(!empty($id)){ ?>
           <input type="hidden" name="edit_id" value="<?= $cate->id ?? '';?>">

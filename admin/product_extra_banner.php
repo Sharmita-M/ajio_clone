@@ -1,17 +1,18 @@
 <?php include 'includes/header.php'; ?>
 
 <div class="flex-grow-1 container-fluid mt-5">
-  <h2 class="section-title text-center">📢 Product Banner Management</h2>
+  <h2 class="section-title text-center">📢 Product Extra Management</h2>
 
   <!-- Add Banner Card -->
   <div class="card card-custom">
     <div class="gradient-header">➕ Add New Banner</div>
     <div class="card-body">
       <form>
-        <div class="mb-3">
-          <label for="bannerTitle" class="form-label">Banner Title</label>
-          <input type="text" class="form-control" id="bannerTitle" placeholder="E.g. Flash Sale">
-        </div>
+        <div class="col-md-4 mb-3">
+                        <label for="productName" class="form-label">Product Name</label>
+                        <input type="text" name="pName" id="productName" class="form-control" placeholder="Name"
+                            value="<?= $cate->product_name ?? '';?>">
+                    </div>
         <div class="mb-3">
           <label for="bannerImage" class="form-label">Upload Banner <small class="text-muted">(1000x700)</small></label>
           <input class="form-control" type="file" id="bannerImage">

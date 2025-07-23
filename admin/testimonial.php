@@ -15,7 +15,7 @@
         </div>
         <div class="mb-3">
           <label for="testimonialText" class="form-label">Testimonial Content</label>
-          <textarea name="testimonialText" id="testimonialText" rows="6" class="form-control testimonial-content"></textarea>
+          <textarea name="testimonialText" id="editor1" rows="6" class="form-control testimonial-content"></textarea>
         </div>
         <button type="submit" class="btn btn-theme w-100">Add Testimonial</button>
       </form>
