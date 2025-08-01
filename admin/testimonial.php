@@ -15,7 +15,7 @@
         </div>
         <div class="mb-3">
           <label for="testimonialText" class="form-label">Testimonial Content</label>
-          <textarea name="testimonialText" id="editor1" rows="6" class="form-control testimonial-content"></textarea>
+          <textarea name="description" id="editor1" rows="6" class="form-control testimonial-content"></textarea>
         </div>
         <button type="submit" class="btn btn-theme w-100">Add Testimonial</button>
       </form>
@@ -29,7 +29,7 @@
       <div class="mb-4">
         <h6 class="fw-semibold">Jane Doe</h6>
         <div class="bg-light border p-3 rounded">
-          "CKEditor is amazing! I can write rich text testimonials without coding. This panel looks great too!"
+          "This panel looks great too!"
         </div>
       </div>
       <div class="mb-4">
@@ -41,8 +41,5 @@
     </div>
   </div>
 </div>
-
- <!-- CKEditor CDN -->
-  <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 <?php include 'includes/footer.php'; ?>
 </div>

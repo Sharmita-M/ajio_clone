@@ -74,6 +74,25 @@ endif;
                 </div>
                 <div class="row">
                     <div class="col-md-4 mb-3">
+                        <label for="subCategorySelect" class="form-label">Select Gender</label>
+                        <select id="subCategorySelect" class="form-select" name="gender">
+                         
+                                             <option disabled>Select</option>
+                            <?php 
+  $subs = $db->query("SELECT * FROM `gender` ORDER BY `g_id` ASC");
+  while($sub = $subs->fetch_object()) {
+      $selected = ($sub->g_id == ($cate->g_id ?? '')) ? 'selected' : '';
+  ?>
+                            <option data-cat="<?= $sub->g_id ?>" value="<?= $sub->g_id  ?>" <?=$selected; ?>>
+                                <?= $sub->gender ?>
+                            </option>
+                            <?php } ?>
+                        </select>   
+                    
+
+
+                    </div>
+                    <div class="col-md-4 mb-3">
                         <label for="Size" class="form-label">Size</label>
                         <input type="text" id="Size" name="size" class="form-control" placeholder="Size available"
                             value="<?= $cate->size_available ?? '';?>">
@@ -83,14 +102,16 @@ endif;
                         <input type="text" id="Color" name="color" class="form-control" placeholder="Color available"
                             value="<?= $cate->color_available ?? '';?>">
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="Stock" class="form-label">Stock</label>
-                        <input type="text" id="Stock" name="stock" class="form-control" placeholder="Stock available"
-                            value="<?= $cate->stock ?? '';?>">
-                    </div>
                 </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="Stock" class="form-label">Stock</label>
+                            <input type="text" id="Stock" name="stock" class="form-control"
+                                placeholder="Stock available" value="<?= $cate->stock ?? '';?>">
+                        </div>
+                   
 
-                <div class="row">
+
                     <!-- Selling Price -->
                     <div class="col-md-4 mb-3">
                         <label for="sellingPrice" class="form-label">Selling Price</label>
@@ -104,10 +125,10 @@ endif;
                         <input type="text" id="marketPrice" name="marketPrice" class="form-control"
                             placeholder="Market Price" value="<?= $cate->product_market_price ?? '';?>">
                     </div>
-
-
+                </div>
+                <div class="row">
                     <!-- Image Upload -->
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-12 mb-3">
                         <label for="productImage" class="form-label">Image</label>
                         <input type="file" id="productImage" name="image" class="form-control"
                             value="<?= $cate->product_image ?? '';?>">
@@ -142,6 +163,7 @@ endif;
                         <th>Category Name</th>
                         <th>Sub-category Name</th>
                         <th>Product Name</th>
+                        <th>Gender</th>
                         <th>Size</th>
                         <th>Color</th>
                         <th>Stock</th>
@@ -156,8 +178,8 @@ endif;
                     <?php
 
        $i = 1;
-$query = $db->query("SELECT     p.*,     ps.psc_name,     pc.pc_name   FROM `product` p  JOIN `product_subcategory` ps ON p.psc_id = ps.psc_id
-  JOIN `product_categories` pc ON p.pc_id = pc.pc_id   ORDER BY p.id DESC");
+$query = $db->query("SELECT     p.*,     ps.psc_name,     pc.pc_name, g.gender   FROM `product` p  JOIN `product_subcategory` ps ON p.psc_id = ps.psc_id
+  JOIN `product_categories` pc ON p.pc_id = pc.pc_id JOIN gender g ON p.g_id = g.g_id   ORDER BY p.id DESC");
 
 while ($row = $query->fetch_object()) {
 ?>
@@ -180,6 +202,9 @@ while ($row = $query->fetch_object()) {
                         </td>
                         <td>
                             <?= $row->product_name; ?>
+                        </td>
+                          <td>
+                            <?= $row->gender; ?>
                         </td>
                         <td>
                             <?= $row->size_available; ?>
@@ -218,7 +243,6 @@ while ($row = $query->fetch_object()) {
         </div>
     </div>
 </div>
-<!-- CKEditor CDN -->
-<script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+
 <?php include 'includes/footer.php'; ?>
 </div>

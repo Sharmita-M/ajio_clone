@@ -17,6 +17,9 @@ if(empty($_SESSION['a_id'])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.bootstrap5.min.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="asserts/style.css">
 
@@ -191,7 +194,18 @@ if(empty($_SESSION['a_id'])){
 
                 <ul class="sidebar-dropdown list-unstyled collapse" id="dashboardMenu8">
 
-               
+                    <li class="sidebar-item">
+                    <a href="product.php" class="sidebar-link">
+                      <span class="align-middle">Add Product</span>
+                    </a>
+
+                  </li>
+                       <li class="sidebar-item">
+                    <a href="add_gender.php" class="sidebar-link">
+                      <span class="align-middle">Add Gender</span>
+                    </a>
+
+                  </li>
 
                   <li class="sidebar-item">
                     <a href="category.php" class="sidebar-link">
@@ -207,12 +221,6 @@ if(empty($_SESSION['a_id'])){
 
                   </li>
 
-                  <li class="sidebar-item">
-                    <a href="product.php" class="sidebar-link">
-                      <span class="align-middle">Add Product</span>
-                    </a>
-
-                  </li>
 
                   <li class="sidebar-item">
                     <a href="product_extra_banner.php" class="sidebar-link">

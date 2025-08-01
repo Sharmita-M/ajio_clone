@@ -67,5 +67,41 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+//data table
+$(document).ready(function() {
+  $('#example').DataTable({
+    dom: '<"dt-buttons btn-group mb-3"Bf><"clear">lirtp',
+    pageLength: 5,
+    lengthMenu: [[5, 10, 25, 50, 100], [5, 10, 25, 50, 100]],
+    buttons: [
+      {
+        extend: 'colvis',
+        className: 'btn btn-secondary-emphasis'
+      },
+      {
+        extend: 'copyHtml5',
+        className: 'btn btn-secondary-emphasis'
+      },
+      {
+        extend: 'csvHtml5',
+        className: 'btn btn-secondary-emphasis'
+      },
+      {
+        extend: 'excelHtml5',
+        className: 'btn btn-secondary-emphasis'
+      },
+      {
+        extend: 'pdfHtml5',
+        className: 'btn btn-secondary-emphasis'
+      },
+      {
+        extend: 'print',
+        className: 'btn btn-secondary-emphasis'
+      }
+    ]
+  });
+});
+
+
 
   

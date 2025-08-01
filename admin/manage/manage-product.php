@@ -19,6 +19,7 @@ switch($submit){
         $categoryId = $_POST['categoryId'] ?? '';
 $sub_cateId = $_POST['sub_cateId'] ?? '';
 $pName = $_POST['pName'] ?? '';
+$gender = $_POST['gender'] ?? '';
 $description = $_POST['description'] ?? '';
 $size = $_POST['size'] ?? '';
 $color = $_POST['color'] ?? '';
@@ -27,8 +28,8 @@ $sellingPrice = $_POST['sellingPrice'] ?? '';
 $marketPrice = $_POST['marketPrice'] ?? '';
         $slug = slug($pName);
         $inserted = $db->
-        query("INSERT INTO `product` (`id`,`pc_id`,`psc_id`,`slug`, `product_name`, `product_market_price`,`product_selling_price`,`size_available`,`color_available`,`stock`,`product_long_description` ) 
-        VALUES ( NULL, '$categoryId','$sub_cateId', '$slug','$pName','$marketPrice','$sellingPrice','$size','$color','$stock','$description')");
+        query("INSERT INTO `product` (`id`,`pc_id`,`psc_id`,`g_id`,`slug`, `product_name`, `product_market_price`,`product_selling_price`,`size_available`,`color_available`,`stock`,`product_long_description` ) 
+        VALUES ( NULL, '$categoryId','$sub_cateId','$gender', '$slug','$pName','$marketPrice','$sellingPrice','$size','$color','$stock','$description')");
         if($inserted){
             $_SESSION['errorMsg'] = 'Product added successfully';
             $_SESSION['errorStatus'] = 'success';
@@ -88,6 +89,7 @@ $marketPrice = $_POST['marketPrice'] ?? '';
             $id = mysqli_real_escape_string($db, $_POST['edit_id']);
             $categoryId = $_POST['categoryId'];
             $sub_cateId = $_POST['sub_cateId'] ;
+            $gender = $_POST['gender'] ?? '';
             $pName = $_POST['pName'] ;
             $description = $_POST['description'] ;
             $size = $_POST['size'];
@@ -96,7 +98,7 @@ $marketPrice = $_POST['marketPrice'] ?? '';
             $sellingPrice = $_POST['sellingPrice'];
             $marketPrice = $_POST['marketPrice'];
 
-            $updated = $db-> query("UPDATE `product` SET `pc_id` = '$categoryId', `psc_id` = '$sub_cateId' , `product_name` = '$pName' 
+            $updated = $db-> query("UPDATE `product` SET `pc_id` = '$categoryId', `psc_id` = '$sub_cateId' ,`g_id` = '$gender', `product_name` = '$pName' 
             , `product_market_price` = '$marketPrice', `product_selling_price` = '$sellingPrice' , `size_available` = '$size' , `color_available` = '$color' 
             , `stock` = '$stock' , `product_long_description` = '$description'  WHERE `id` = '$id'");
             if($updated){

@@ -18,7 +18,6 @@ if (!empty($_SESSION['errorMsg'])):
     unset($_SESSION['errorMsg'], $_SESSION['errorStatus']);
 endif;
 ?>
-
  <div class="flex-grow-1 container-fluid mt-5 mb-5">
   <h2 class="section-title text-center">📝 Category Management</h2>
 
@@ -28,9 +27,10 @@ endif;
     <div class="card-body">
       <form method ="POST" action="manage/manage-category.php" enctype="multipart/form-data">
         <div class="mb-3">
-          <label for="authorName" class="form-label" > Category Name</label>
+          <label for="authorName" class="form-label"> Category Name</label>
           <input type="text" name="category"  class="form-control" id="authorName" placeholder="E.g. Men Jeans" value="<?= $cate->pc_name ?? '';?>">
         </div>
+    
         <div class="mb-3">
           <label for="bannerImage" class="form-label">Upload Image <small class="text-muted">(400x400)</small></label>
           <input class="form-control" name="image" type="file" id="bannerImage" value="<?= $cate->pc_image ?? '';?>">
@@ -64,12 +64,13 @@ endif;
     View Category
   </div>
   <div class="card-body table-responsive">
-    <table class="table table-bordered align-middle text-center">
+    <table  id="example" class="table table-bordered align-middle text-center">
       <thead class="table-light">
         <tr>
           <th>Sl No</th>
           <th>Action</th>
           <th>Product Name</th>
+          <th>Gender</th>
           <th>Description</th>
           <th>Image</th>
           <th>Date Of Add</th>
@@ -90,6 +91,7 @@ endif;
               <button onclick="location.href='manage/manage-category.php?action=delete&pc_id=<?= $row->pc_id;?>' " class="btn btn-sm btn-outline-danger">Delete</button>
             </td>
           <td><?= $row-> pc_name?></td>
+          <td><?= $row-> Gender?></td>
           <td><?= $row -> description?></td>
           <td><img src="uploads/category/<?= $row-> pc_image?>" alt="no images found" class="img-fluid" style="width: 50px;"></td>
           <td><?= $row-> create_at?></td>
